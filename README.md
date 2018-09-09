@@ -15,13 +15,13 @@ Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard
 | 10/09/2018    |       TD1       |Rappels réseaux  |Rapport | 
 | 11/09/2018    |       TP1       |Mise en pratique |Rapport |  
 | 17/09/2018    |       TD2       |     x           |Rapport | x
-| 01/10/2018    |       TP2       |                 |Rapport | x 
-| 08/10/2018    | Examen          |x|   
-| 16/10/2018    | Code Review     |x|   
-| 23/10/2018    | Interview       |x|   
-| 07/11/2018    | Interview       |x|   
-| 14/11/2018    | Code Review     |x|  
-| 21/11/2018    | Examen          |x|   
-| 27/11/2018    | Interview       |Rapport individuel - 23h00|   
-| 05/12/2018    | Présentation    |Remise de la présentation - 12h00|  
+| 18/09/2018    |       TP2       |     x           |Rapport | x 
+| 24/09/2018    |       TD3       |     x           |Rapport | x  
+| 25/09/2018    |       TP3       |     x           |Rapport | x   
+| 17/10/2018    |       TD4       |     x           |Rapport | x  
+| 24/10/2018    |       TD5       |     x           |Rapport | x 
+| 24/10/2018    |       TP4       |     x           |Rapport | x
+| 07/11/2018    |       TD6       |     x           |Rapport | x   
+| 12/11/2018    |       TD7       |     x           |Rapport | x  
+| 13/11/2018    |       TD8       | Présentation    |Rapport | x 
 
