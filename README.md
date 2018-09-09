@@ -11,7 +11,7 @@ Les notes sont individuelles. Il y a 5 types d'évaluations possibles.
 Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard est équivalent à une note de 0.
 
 | Dates  | Type | Titre | Evaluation |  
-| :------------ |:---------------:|:---------------:| 
+| :------------ |:---------------:|:---------------:| :---------------:|
 | 10/09/2018    |       TD        |x| 
 | 17/09/2018    | Interview       |x|  
 | 24/09/2018    | Interview       |x|   
