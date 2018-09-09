@@ -12,9 +12,9 @@ Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard
 
 | Dates  | Type | Titre | Evaluation |  
 | :------------ |:---------------:|:---------------:| :---------------:|
-| 10/09/2018    |       TD1        |Rappels réseaux | Rapport individuel
-| 17/09/2018    | Interview       |x|  
-| 24/09/2018    | Interview       |x|   
+| 10/09/2018    |       TD1       |Rappels réseaux  | Rapport 
+| 11/09/2018    |       TP1       | Topologie       | Rapport   
+| 17/09/2018    |       TD2       |x|   
 | 01/10/2018    | Interview       |Rapport groupe - 23h00|   
 | 08/10/2018    | Examen          |x|   
 | 16/10/2018    | Code Review     |x|   
