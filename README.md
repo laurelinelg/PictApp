@@ -12,8 +12,8 @@ Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard
 
 | Dates  | Type | Titre | Evaluation | Date de soumission
 | :------------ |:---------------:|:---------------:| :---------------:|:---------------:|
-| 10/09/2018    |       TD1       |Rappels réseaux  |Rapport | 
-| 11/09/2018    |       TP1       |Mise en pratique |Rapport |  
+| 10/09/2018    |       TD1       |Rappels réseaux  |Rapport |  16/09 à 23h
+| 11/09/2018    |       TP1       |    Git          |x |  
 | 17/09/2018    |       TD2       |     x           |Rapport | x
 | 18/09/2018    |       TP2       |     x           |Rapport | x 
 | 24/09/2018    |       TD3       |     x           |Rapport | x  
