@@ -4,7 +4,7 @@
 ## La procédure d'évaluation
 
 Au 1er semestre, il y a 12 séances. Chaque séance est notée. 
-Les notes sont individuelles. Il y a 5 types d'évaluations possibles.
+Les notes sont individuelles.
 
 ### Organisation du cours
 
