@@ -43,3 +43,14 @@ ce qui les rend facilement extensible. Vérifier que votre routeur est équipé 
 ## Partie II
 
 **Configuration interne d'un routeur**
+On rappel qu’un routeur se distingue des autres entités réseaux comme les Ponts, les Hubs, et les Switch par le fait qu’il embarque un processeur, un système d’exploitation et de la mémoire. La Figure ci-dessous, illustre la structure interne généralement observée d’un routeur.
+
+![Alt text](gns3-structure-interne-router.png?raw=true "Structure interne d’un routeur")
+
+Dans la suite de cette partie, nous allons nous intéresser aux différents principes de fonctionnement/configuration de l’OS des routeurs de type Cisco (IOS).
+
+**Les modes de l’IOS Cisco**
+
+L’OS des routeurs Cisco dispose de deux principaux modes de fonctionnement : (i) le mode utilisateur et (ii) le mode privilège. Par défaut, lorsque l’on se connecte au routeur, l’utilisateur se trouve dans le mode utilisateur ; Le mode utilisateur est caractérisé par l’invite de commande ‘>’ (voir ci-dessous, 1) tandis que le mode privilège est caractérisé par l’invite de commande ‘#’ (voir ci-dessous, 2) . Un mode peut être décomposer en sous modes. Par exemple, la configuration d’une interface réseau se fait par le sous mode config-if du mode configuration (voir ci-dessous, 3) .
+
+
