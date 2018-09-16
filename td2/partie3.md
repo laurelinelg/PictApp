@@ -1,6 +1,6 @@
 ## Partie III
 
-![Alt text](gns3-prise-en-main.png?raw=true "Détail de la fenêtre du simulateur")
+![Alt text](images/gns3-prise-en-main.png?raw=true "Détail de la fenêtre du simulateur")
 
 **Configuration basique du routeur**
 1.	Lancer le simulateur GNS3. Glisser/déposer deux routeurs sur le plan de travail. Un routeur du type c7200 fera office de routeur et un autre de type c3600 fera office de PC. Reliez les deux entités par un câble *FastEthernet*.
@@ -35,7 +35,7 @@
 
 13.	Réinitialiser la capture réseau. Faire un **ping** du routeur R0 vers PC1 et vice versa. Vous devriez obtenir la capture réseau suivante :
  
-![Alt text](gns3-trafic-reseau.png?raw=true "Analyse du trafic réseau")
+![Alt text](images/gns3-trafic-reseau.png?raw=true "Analyse du trafic réseau")
 
 Suivant votre capture, déduisez le rôle du protocole ARP ? Pourquoi le protocole ICMP est-il utilisé ? Faire un diagramme de séquence des messages véhiculés sur le réseau et provoqués par la commande **ping**.
 
@@ -64,7 +64,7 @@ Suivant votre capture, déduisez le rôle du protocole ARP ? Pourquoi le protoco
 L’administrateur décide de modifier la topologie du réseau, et obtient la topologie suivante.
  
  
-![Alt text](gns3-modification-topologie.png?raw=true "Modification de la topologie")
+![Alt text](images/gns3-modification-topologie.png?raw=true "Modification de la topologie")
 
 
 23.	Répercuter les modifications de topologie sur votre topologie et configurer en conséquence la station PC2 (Ne pas oublier de désactiver le protocole CDP et ETCP de son interface active). Indiquer les commandes effectuer sur chaque entité concernée.
@@ -79,7 +79,7 @@ L’administrateur décide de modifier la topologie du réseau, et obtient la to
 
 L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pour attribuer automatiquement une @IP aux stations du réseau. Il obtient la topologie suivante :
 
-![Alt text](gns3-Activation-DHCP.png?raw=true "Activation du service DHCP")
+![Alt text](images/gns3-Activation-DHCP.png?raw=true "Activation du service DHCP")
 
 27.	Répercuter les modifications de topologie sur votre topologie. Quel(s) élément(s) actif(s) allez vous rajouter à votre réseau ? Ne pas configurer manuellement les @IP des stations PC3 et PC4. (Ne pas oublier de désactiver le protocole CDP et ETCP de son interface active)
 
@@ -109,7 +109,7 @@ L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pou
 
 36.	L’administrateur du réseau décide de rajouter un nouveau réseau. Mettez à jour votre topologie suivant le schéma ci-dessous.
  
- ![Alt text](gns3-topologie-cplx.png?raw=true "Modification de la topologie")
+ ![Alt text](images/gns3-topologie-cplx.png?raw=true "Modification de la topologie")
  
  
 37.	Activer la station PC5 comme client DHCP. Suivant les traces réseaux, la station parvient-elle à obtenir une @IP à partir du serveur DHCP ? Pourquoi ? Proposer une solution, discuter des avantages/inconvénients.
