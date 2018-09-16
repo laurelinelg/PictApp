@@ -76,6 +76,7 @@ L’administrateur décide de modifier la topologie du réseau, et obtient la to
 26.	A partir des traces réseau, indiquer si les requêtes ICMP de type ECHO sont elles suivies de réponses ICMP de type ECHO. Justifiez, et sinon identifier le problème et rectifier le.
 
 **Attribution dynamique d’adresse IP**
+
 L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pour attribuer automatiquement une @IP aux stations du réseau. Il obtient la topologie suivante :
 
 ![Alt text](gns3-Activation-DHCP.png?raw=true "Activation du service DHCP")
@@ -95,10 +96,10 @@ L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pou
 31.	Combien de réseaux IP devez-vous configurer ? Pourquoi ? 
  
 32.	Sur le réseau 192.168.1.0/24, Quelles sont les conséquences de l’activation du serveur DHCP sur le routeur ? Analyser les traces réseaux. Indiquer :
-    a.	Quels sont les messages générés, 
-    b.	Indiquer les raisons pour lesquelles ces messages sont de type *Broadcast ou Unicast*,
-    c.	Pourquoi des messages ARP sont-ils générés ? justifiez.
-    d.	Pour chaque message, précisez quels sont les @Ethernet/IP source et destination, les ports utilisés, les options utilisées.
+  - (a)	Quels sont les messages générés, 
+  - (b)	Indiquer les raisons pour lesquelles ces messages sont de type *Broadcast ou Unicast*,
+  - (c)	Pourquoi des messages ARP sont-ils générés ? justifiez.
+  - (d)	Pour chaque message, précisez quels sont les @Ethernet/IP source et destination, les ports utilisés, les options utilisées.
 
 33.	Une erreur, indiquant qu’il y a un conflit d’@IP, est susceptible de s’afficher sur la console du routeur R0. Indiquer pourquoi et résoudre le problème. Pour vérifier la configuration DHCP du routeur utiliser la commande **show ip dhcp arg**.
 
