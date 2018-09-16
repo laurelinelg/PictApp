@@ -69,15 +69,16 @@ L’administrateur décide de modifier la topologie du réseau, et obtient la to
 
 23.	Répercuter les modifications de topologie sur votre topologie et configurer en conséquence la station PC2 (Ne pas oublier de désactiver le protocole CDP et ETCP de son interface active). Indiquer les commandes effectuer sur chaque entité concernée.
 
-24.	Démarrer la capture du trafic réseau sur les interfaces PC1(f0/0) et PC2(f0/0).  On souhaite à partir de la station PC1 faire un ping de la station PC2. Théoriquement : sur le schéma de la Figure 3: (i) indiquer quels sont les messages ARP générés et leurs cheminements au travers le réseau, (ii) indiquer également le cheminement des messages ICMP. Par la pratique, vérifier la validité de vos réponses précédentes et analyser les traces sur les deux segments réseaux. Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Pourquoi ?
+24.	Démarrer la capture du trafic réseau sur les interfaces PC1(f0/0) et PC2(f0/0).  On souhaite à partir de la station PC1 faire un ping de la station PC2. **Théoriquement** : sur le schéma de la Figure 3: (i) indiquer quels sont les messages ARP générés et leurs cheminements au travers le réseau, (ii) indiquer également le cheminement des messages ICMP. **Par la pratique**, vérifier la validité de vos réponses précédentes et analyser les traces sur les deux segments réseaux. Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Pourquoi ?
 
-25.	Saisissez les commandes suivantes sur la station PC1 : ip route 0.0.0.0 0.0.0.0 192.168.1.1. Quel est l’effet de cette commande ? (Aidez vous des traces réseaux issues de la capture, et relever quels sont les @MACs et @IPs source et destination). Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Mettre à jour votre schéma précédent à partir de votre expérimentation.
+25.	Saisissez les commandes suivantes sur la station PC1 : **ip route 0.0.0.0 0.0.0.0 192.168.1.1**. Quel est l’effet de cette commande ? (Aidez vous des traces réseaux issues de la capture, et relever quels sont les @MACs et @IPs source et destination). Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Mettre à jour votre schéma précédent à partir de votre expérimentation.
 
 26.	A partir des traces réseau, indiquer si les requêtes ICMP de type ECHO sont elles suivies de réponses ICMP de type ECHO. Justifiez, et sinon identifier le problème et rectifier le.
-Attribution dynamique d’adresse IP
+
+**Attribution dynamique d’adresse IP**
 L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pour attribuer automatiquement une @IP aux stations du réseau. Il obtient la topologie suivante :
- 
-Figure 4 – Activation du service DHCP
+
+![Alt text](gns3-Activation-DHCP.png?raw=true "Activation du service DHCP")
 
 27.	Répercuter les modifications de topologie sur votre topologie. Quel(s) élément(s) actif(s) allez vous rajouter à votre réseau ? Ne pas configurer manuellement les @IP des stations PC3 et PC4. (Ne pas oublier de désactiver le protocole CDP et ETCP de son interface active)
 
