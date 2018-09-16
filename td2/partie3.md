@@ -18,9 +18,9 @@
 6.	Activer la capture de l’interface *FastEthernet* du routeur connecté à PC1 (R0 (f1/0) -> PC1 (f0/0)). Patienter quelques minutes et lancer *Wireshark* sur la capture réalisée. Identifier les protocoles utilisés sur lien réseau. 
 
 7.	Identifier les trames encapsulant le protocole CDP (*Cisco Discovery Protocol*). En analysant la trame vous devriez comprendre le rôle de ce protocole et pouvoir répondre aux questions suivantes. A chaque réponse indiquer à quelle couche du modèle OSI vous vous situez.
-  a.	 A qui est destiné le message envoyé ? Quelle est l’adresse IP du destinataire ? Pourquoi ?
-  b.	Quelle est la fréquence de ces messages ?
-  c.	Quelles informations fondamentales ce protocole véhicule ?
+  - (a)	A qui est destiné le message envoyé ? Quelle est l’adresse IP du destinataire ? Pourquoi ?
+  - (b)	Quelle est la fréquence de ces messages ?
+  - (c)	Quelles informations fondamentales ce protocole véhicule ?
 8.	Réinitialiser la capture du trafic réseau de *Wireshark* (arrêter, puis démarrer une nouvelle capture). Assigner dorénavant une adresse IP à la station PC1 de façon à ce qu’elle soit sur le même réseau IP que le routeur R0. La station PC1 utilise t’elle le protocole CDP ? Pourquoi ?  
 
 9.	Tester alternativement les commandes relatives au protocole CDP sur le routeur R0 et la station PC1 via les commandes **show cdp trafic, show cdp neighbors, show cdp neighbors détail, show cdp**. Ces commandes génèrent-elles de nouveaux messages CDP sur le réseau ? Quel est le mode de fonctionnement de ce protocole ?
@@ -82,25 +82,25 @@ L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pou
 
 27.	Répercuter les modifications de topologie sur votre topologie. Quel(s) élément(s) actif(s) allez vous rajouter à votre réseau ? Ne pas configurer manuellement les @IP des stations PC3 et PC4. (Ne pas oublier de désactiver le protocole CDP et ETCP de son interface active)
 
-28.	Les stations PC1 et PC2 restent configurées manuellement, par contre les stations PC4 et PC3 deviennent des clients DHCP. Activer la capture de trafic sur le réseau 192.168.1.0/24 et 192.168.2.0/24. Activer le client DHCP sur ces stations, utiliser la commande ip address dhcp sur les interfaces réseaux concernées.
+28.	Les stations PC1 et PC2 restent configurées manuellement, par contre les stations PC4 et PC3 deviennent des clients DHCP. Activer la capture de trafic sur le réseau 192.168.1.0/24 et 192.168.2.0/24. Activer le client DHCP sur ces stations, utiliser la commande **ip address dhcp** sur les interfaces réseaux concernées.
 
 29.	Vérifier que le DHCP a bien été activé.  Quelles sont les conséquences de l’activation du client DHCP sur les stations PC4 et PC3 sur le réseau ? Analyser les traces réseaux. Indiquer :
-  a.	Quels sont les messages générés, 
-  b.	Quels sont les protocoles sous-jacents, 
-  c.	Comment sont encapsuler les messages,
-  d.	Pour chaque message, précisez quels sont les @Ethernet/IP source et destination, les ports utilisés, les options utilisés.
-  e.	Quelles sont les informations que cherche à obtenir le client DHCP ?
-30.	L’attribution dynamique d’@IP fonctionne selon un mode client/serveur. Activer le serveur DHCP sur le routeur R0 via les commandes service dhcp ; ip dhcp pool nom_du_pool; Dans le sous mode dhcp, lister l’ensemble des commandes disponibles. Indiquer le réseau IP sur lequel vous souhaitez activer le serveur DHCP et Configurer l’option qui permet d’ajouter un  routeur par défaut.
+   - (a)	Quels sont les messages générés, 
+   - (b)	Quels sont les protocoles sous-jacents, 
+   - (c)	Comment sont encapsuler les messages,
+   - (d)	Pour chaque message, précisez quels sont les @Ethernet/IP source et destination, les ports utilisés, les options utilisés.
+   - (e)	Quelles sont les informations que cherche à obtenir le client DHCP ?
+30.	L’attribution dynamique d’@IP fonctionne selon un mode client/serveur. Activer le serveur DHCP sur le routeur R0 via les commandes **service dhcp ; ip dhcp pool nom_du_pool;** Dans le sous mode dhcp, lister l’ensemble des commandes disponibles. Indiquer le réseau IP sur lequel vous souhaitez activer le serveur DHCP et Configurer l’option qui permet d’ajouter un  routeur par défaut.
 
 31.	Combien de réseaux IP devez-vous configurer ? Pourquoi ? 
  
 32.	Sur le réseau 192.168.1.0/24, Quelles sont les conséquences de l’activation du serveur DHCP sur le routeur ? Analyser les traces réseaux. Indiquer :
-  a.	Quels sont les messages générés, 
-  b.	Indiquer les raisons pour lesquelles ces messages sont de type Broadcast ou Unicast,
-  c.	Pourquoi des messages ARP sont-ils générés ? justifiez.
-  d.	Pour chaque message, précisez quels sont les @Ethernet/IP source et destination, les ports utilisés, les options utilisées.
+    a.	Quels sont les messages générés, 
+    b.	Indiquer les raisons pour lesquelles ces messages sont de type *Broadcast ou Unicast*,
+    c.	Pourquoi des messages ARP sont-ils générés ? justifiez.
+    d.	Pour chaque message, précisez quels sont les @Ethernet/IP source et destination, les ports utilisés, les options utilisées.
 
-33.	Une erreur, indiquant qu’il y a un conflit d’@IP, est susceptible de s’afficher sur la console du routeur R0. Indiquer pourquoi et résoudre le problème. Pour vérifier la configuration DHCP du routeur utiliser la commande show ip dhcp arg.
+33.	Une erreur, indiquant qu’il y a un conflit d’@IP, est susceptible de s’afficher sur la console du routeur R0. Indiquer pourquoi et résoudre le problème. Pour vérifier la configuration DHCP du routeur utiliser la commande **show ip dhcp arg**.
 
 34.	A partir des précédentes questions, donner un diagramme de séquence des messages qui transitent dans le réseau afin d’affecter une @IP à une station. 
 
@@ -108,9 +108,12 @@ L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pou
 
 36.	L’administrateur du réseau décide de rajouter un nouveau réseau. Mettez à jour votre topologie suivant le schéma ci-dessous.
  
+ ![Alt text](gns3-topologie-cplx.png?raw=true "Modification de la topologie")
+ 
+ 
 37.	Activer la station PC5 comme client DHCP. Suivant les traces réseaux, la station parvient-elle à obtenir une @IP à partir du serveur DHCP ? Pourquoi ? Proposer une solution, discuter des avantages/inconvénients.
 
-38.	Activer la capture du trafic sur le réseau 192.168.2.0/24 et sur le réseau 192.168.3.0/24. Sur le routeur R1, paramétrer l’interface du routeur connectée au réseau 192.168.3.0 en tapant la commande ip helper-address 192.168.2.1. Sur la station PC5, réitérer le renouvellement d’un bail DHCP via la commande renew dhcp. En vous aidant des traces réseaux, indiquer quelle est la conséquence de la commande taper sur le router R1 ? 
+38.	Activer la capture du trafic sur le réseau 192.168.2.0/24 et sur le réseau 192.168.3.0/24. Sur le routeur R1, paramétrer l’interface du routeur connectée au réseau 192.168.3.0 en tapant la commande **ip helper-address 192.168.2.1**. Sur la station PC5, réitérer le renouvellement d’un bail DHCP via la commande **renew dhcp**. En vous aidant des traces réseaux, indiquer quelle est la conséquence de la commande taper sur le router R1 ? 
 
 39.	La station PC5 obtient-elle son @IP dynamique ? Si non, déterminer le problème et le résoudre.
 
