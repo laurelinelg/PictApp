@@ -105,7 +105,7 @@ L’administrateur ajoute de nouvelles stations et décide d’utiliser DHCP pou
 
 34.	A partir des précédentes questions, donner un diagramme de séquence des messages qui transitent dans le réseau afin d’affecter une @IP à une station. 
 
-35.	Annoter le schéma de la Figure 4 en indiquant le cheminement des différents messages sur le réseau.
+35.	Annoter le schéma de la Figure ci-dessus en indiquant le cheminement des différents messages sur le réseau.
 
 36.	L’administrateur du réseau décide de rajouter un nouveau réseau. Mettez à jour votre topologie suivant le schéma ci-dessous.
  
