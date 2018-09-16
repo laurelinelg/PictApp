@@ -3,7 +3,7 @@
 **Configuration interne d'un routeur**
 On rappel qu’un routeur se distingue des autres entités réseaux comme les Ponts, les Hubs, et les Switch par le fait qu’il embarque un processeur, un système d’exploitation et de la mémoire. La Figure ci-dessous, illustre la structure interne généralement observée d’un routeur.
 
-![Alt text](gns3-structure-interne-router.png?raw=true "Structure interne d’un routeur")
+![Alt text](images/gns3-structure-interne-router.png?raw=true "Structure interne d’un routeur")
 
 Dans la suite de cette partie, nous allons nous intéresser aux différents principes de fonctionnement/configuration de l’OS des routeurs de type Cisco (IOS).
 
