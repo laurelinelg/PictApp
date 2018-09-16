@@ -45,7 +45,7 @@ Suivant votre capture, déduisez le rôle du protocole ARP ? Pourquoi le protoco
 
 16.	Réitérer plusieurs **ping** de R0 vers PC1 et vice versa. De nouveaux messages ARP sont-ils de nouveau émis ? Si oui justifiez, sinon précisez les différents cas susceptibles d’être responsable d’une nouvelle génération de messages ARP.
 
-17.	Que se passe t’il si vous changez l’adresse IP de la station PC1 ? Justifiez, testez et décrire la trace réseau correspondante Percevez-vous de nouveaux messages ARP ? pourquoi ? 
+17.	Que se passe t’il si vous changez l’adresse IP de la station PC1 ? Justifiez, testez et décrire la trace réseau correspondante. Percevez-vous de nouveaux messages ARP ? pourquoi ? 
 
 18.	Peut-on utiliser ARP sur Internet ? Pourquoi ?
 
@@ -53,9 +53,9 @@ Suivant votre capture, déduisez le rôle du protocole ARP ? Pourquoi le protoco
 
 19.	Faire un **ping R0** et/ou **ping PC1** à partir de PC1. Quel est le retour de la commande ? Pourquoi ? Analyser/expliquer en conséquence la trace réseau résultante. 
 
-20.	Saisir les commandes suivantes sur PC1 : **config t ; ip host PC1 @IP_PC1 ; ip host R0 @IP_R0 ; end** et refaire un **ping R0** et/out un **ping PC1** à partir de R0 et de PC1. Quels sont les retours de ces commandes ? Pourquoi ? Analyser/expliquer en conséquence les traces réseau résultantes. Quels sont les avantages et/ou inconvénients des commandes tapées ?
+20.	Saisir les commandes suivantes sur PC1 : **config t ; ip host PC1 @IP_PC1 ; ip host R0 @IP_R0 ; end** et refaire un **ping R0** et/ou un **ping PC1** à partir de R0 et de PC1. Quels sont les retours de ces commandes ? Pourquoi ? Analyser/expliquer en conséquence les traces réseau résultantes. Quels sont les avantages et/ou inconvénients des commandes tapées ?
 
-21.	Faire un ping **www.google.fr**. Quelles observations peut on faire ? Rappeler le fonctionnement de la résolution de nom et schématiser  le fonctionnement du **résolver**.
+21.	Faire un ping **www.google.fr**. Quelles observations peut on faire ? Rappeler le fonctionnement de la résolution de nom, et schématiser  le fonctionnement du **résolver**.
 
 22.	Saisir les commandes suivantes : **config t ; no ip domain lookup**. Quel est l’effet de ces commandes ? Pourquoi ? Quels sont les répercutions sur la stratégie du résolver ?
 
@@ -69,7 +69,7 @@ L’administrateur décide de modifier la topologie du réseau, et obtient la to
 
 23.	Répercuter les modifications de topologie sur votre topologie et configurer en conséquence la station PC2 (Ne pas oublier de désactiver le protocole CDP et ETCP de son interface active). Indiquer les commandes effectuer sur chaque entité concernée.
 
-24.	Démarrer la capture du trafic réseau sur les interfaces PC1(f0/0) et PC2(f0/0).  On souhaite à partir de la station PC1 faire un ping de la station PC2. **Théoriquement** : sur le schéma de la Figure 3: (i) indiquer quels sont les messages ARP générés et leurs cheminements au travers le réseau, (ii) indiquer également le cheminement des messages ICMP. **Par la pratique**, vérifier la validité de vos réponses précédentes et analyser les traces sur les deux segments réseaux. Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Pourquoi ?
+24.	Démarrer la capture du trafic réseau sur les interfaces PC1(f0/0) et PC2(f0/0).  On souhaite à partir de la station PC1 faire un ping de la station PC2. **Théoriquement** : sur le schéma de la Figure ci-dessus: (i) indiquer quels sont les messages ARP générés et leurs cheminements au travers le réseau, (ii) indiquer également le cheminement des messages ICMP. **Par la pratique**, vérifier la validité de vos réponses précédentes et analyser les traces sur les deux segments réseaux. Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Pourquoi ?
 
 25.	Saisissez les commandes suivantes sur la station PC1 : **ip route 0.0.0.0 0.0.0.0 192.168.1.1**. Quel est l’effet de cette commande ? (Aidez vous des traces réseaux issues de la capture, et relever quels sont les @MACs et @IPs source et destination). Les requêtes ICMP de type ECHO atteignent-elles les interfaces f1/0 et f1/1 du routeur R0 et l’interface de la station PC2 ? Mettre à jour votre schéma précédent à partir de votre expérimentation.
 
