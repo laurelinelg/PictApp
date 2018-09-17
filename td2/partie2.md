@@ -9,6 +9,9 @@ Dans la suite de cette partie, nous allons nous intéresser aux différents prin
 
 **Les modes de l’IOS Cisco**
 
+
+![Alt text](images/gns3-fonctionnement-interne.png?raw=true "Structure interne d’un routeur")
+
 L’OS des routeurs Cisco dispose de deux principaux modes de fonctionnement : (i) le mode utilisateur et (ii) le mode privilège. Par défaut, lorsque l’on se connecte au routeur, l’utilisateur se trouve dans le mode utilisateur ; Le mode utilisateur est caractérisé par l’invite de commande ‘>’ (voir ci-dessous, 1) tandis que le mode privilège est caractérisé par l’invite de commande ‘#’ (voir ci-dessous, 2) . Un mode peut être décomposer en sous modes. Par exemple, la configuration d’une interface réseau se fait par le sous mode config-if du mode configuration (voir ci-dessous, 4) .
 
 1.	Connectez vous au routeur précédemment déposé sur le plan de travail. Faire un clique droit sur le routeur et sélectionner console pour ouvrir la console du routeur. A la question **Would you like to enter the initial configuration dialog ?**, répondre **no**.
