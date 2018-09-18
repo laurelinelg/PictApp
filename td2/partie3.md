@@ -7,7 +7,7 @@
 
 2.	Changer le nom du routeur c7200 afin qu’il se nomme R0 et changer le nom du routeur c3600 afin qu’il se nomme PC1.
 
-3.	Quelles sont les caractéristiques IP par défaut du routeur ?
+3.	Quelle est la commande vous permettant d'obtenir les caractéristiques IP par défaut du routeur ?
 
 4.	Assigner l’addresse IP 192.168.1.1 au routeur R0. Rappeler à quoi sert le *netmask*, et indiquer/justifier quel *netmask* avez vous choisi. 
 
