@@ -133,18 +133,14 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
     - Vous devriez obtenir toutes les stations connectées.
     - Notez le BSSID du point d'accès et les @MAC des stations connectées.
     - Arrêter la capture, étudier le fichier airodump.pcap. Comparer cette technique avec **nmap** et **arp-scan**.
-
-  ![Alt text](images/airodump1.png?raw=true "Pairwise Master Key")
+    ![Alt text](images/airodump1.png?raw=true "Pairwise Master Key")
 
 1. Dorénavant, nous allons injecter des trames afin de forcer la déconnection de tous les clients du point d'accès TP-Link_39C5.
-
-  - Capturer avec **tshark** le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichier deauth.pcap.
-
-  - Nous allons injecter du traffic avec **aireplay-ng** en utilisant l'attaque 0.
-
-  - Choisissez l'@MAC d'une station et déconnecter la du réseau.
+    - Capturer avec **tshark** le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichier deauth.pcap.
+    - Nous allons injecter du traffic avec **aireplay-ng** en utilisant l'attaque 0.
+    - Choisissez l'@MAC d'une station et déconnecter la du réseau.
     ```console
     aireplay-ng -0 0 -a  BSSID -c @MAC_STATION wlan1mon
     ```
 
-  - Vérifier que la station est bien déconnectée. Arrêter la capture, et l'attaque. Analyser la capture deauth.pcap. Expliquer le fonctionnement de l'attaque. Illustrer avec des fragments de la capture de traffic *deauth.pcap*. En particulier, identifier les trames correspondant à l'attaque et les trames de reauthentification.
+    - Vérifier que la station est bien déconnectée. Arrêter la capture, et l'attaque. Analyser la capture deauth.pcap. Expliquer le fonctionnement de l'attaque. Illustrer avec des fragments de la capture de traffic *deauth.pcap*. En particulier, identifier les trames correspondant à l'attaque et les trames de reauthentification.
