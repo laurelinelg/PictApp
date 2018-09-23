@@ -34,15 +34,10 @@
 ![Alt text](images/pmk.png?raw=true "Pairwise Master Key")
 
     Le **4-way handshake** fonctionne de la manière suivante:
-
   (1) Le point d'accès (A, comme *Access Point*) génère et envoie *msg1* qui contient un nombre aléatoire *ANonce* sans le chiffrer et sans l'authentifier.
-
   (2) A la réception de *msg1*, le client (S, comme *Supplicant*) génère son propre nombre aléatoire *SNonce*. Et calcule une **PTK** basé sur: PTK= G(Anonce,SNonce,@MAC A,@MAC S). Attention, une **PTK** n'est pas juste une seule clé mais correspond à hiérarchie de 3 clés: KCK, KEK et une TK. Le client envoie alors un message *msg2* contenant SNonce et les paramètres de sécurité. La totalité du message est soumis à une vérification d'authentification grâce à la clé KCK. Cela correspond au **MIC** (Message Integrety Check).
-
   (3) A la réception du *msg2*, le point d'accès doit pouvoir extraire le *SNonce* pour calculer, à son tour, la **PTK**, et vérifier le **MIC** du *msg2* afin de s'assurer que le client connaît bien la **PMK**. Enfin le point d'accès peut envoyer le *msg3* qui contient un clé **GTK** pour cypter les traffic en diffusion. La clé **GTK** est cryptée avec la **KEK**. La totalité du message est vérifiée *via* le **MIC** calculé grâce à la clé KCK.
-
   (4) Enfin le dernier message *msg4* est envoyé par le client afin d'acquitter la réussite du 4-way Handshake, et indique que le client a correctement installé les clés et qu'il est prêt à commencer le chiffrement des données.
-
 1. Mainentant que l'on a compris globalement le fonctionnement du WPA2, on souhaite analyser/comprendre l'authentification auprès du point d'accès **TP-Link_39C5**. Pour ce faire:
    - Lancer dans une 2e console, une deuxième connexion **ssh**.
    - Lancer **tshark** pour capturer le traffic. On souhaite capturer les 10 premiers paquets de l'interface **wlan0** dans un fichier de capture *wpa.pcap*.
