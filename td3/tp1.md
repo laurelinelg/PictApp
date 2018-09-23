@@ -21,15 +21,15 @@
 1. Faire un **iwconfig wlan0**. Quelles informations peut-on obtenir sur l'interface sans fil?
 
 1. Le point d'accès utilise WPA2 pour s'authentifier et encrypter les communications.
-  - A quoi sert une **PSK**? Pour quelles raisons utilise-t-on une **PSK**?
+    - A quoi sert une **PSK**? Pour quelles raisons utilise-t-on une **PSK**?
 
 1. La station et le point d'accès doivent partager une même **PMK** (*Pairwise Master Key*), sachant que dans notre contexte **PMK=hash(ssid,psk)**.
     - Pourquoi la **PMK** n'est elle pas utiliser directement pour encrypter les communications?
 
 1. Une **PTK** (*Pairwise Transcient Key*) doit être générée pour encrypter les données. Pour information la PTK correspond à un ensemble de 3 clés **KCK, KEK et TK** dérivé à l'aide de la PMK et d'un **4-way handshake**.
-  - KCK = Key Confirmation Key, permet de garantir l'authenticité de l'origin
-  - KEK = Key Encryption Key, permet de garantir la confidentialité dans les échanges de clés.
-  - TK  = Temporal Key, permet d'encrypter les données.
+    - KCK = Key Confirmation Key, permet de garantir l'authenticité de l'origin
+    - KEK = Key Encryption Key, permet de garantir la confidentialité dans les échanges de clés.
+    - TK  = Temporal Key, permet d'encrypter les données.
 
 ![Alt text](images/pmk.png?raw=true "Pairwise Master Key")
 
@@ -79,13 +79,13 @@ Successfully initialized wpa_supplicant
 1. Comment feriez-vous pour collecter l'ensemble des @IP des stations connectées au réseau WIFI?
 
   - Vérifier vos hypothèses en utilisant l'utilitaire **nmap** avec l'option **-sn**.
-  - Faire un ** man nmap ** pour plus d'infomations.
+  - Faire un **man nmap** pour plus d'infomations.
   - Capturer le traffic AVANT de lancer la commande afin de déterminer la technique utilisée par nmap.
   - Expliquer.
 
 1. On souhaite utiliser une autre technique pour détecter les stations sur le réseau.
 
-  - Utiliser **tshark** pour capturer le traffic dans un fichier *arp-scan.pcap*
+    - Utiliser **tshark** pour capturer le traffic dans un fichier *arp-scan.pcap*
 
   - Utilier la commande **arp-scan** sur l'interface **wlan0** avec les options **--interface** et **--localnet**
 
@@ -118,6 +118,7 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
   ```console
   root@kali:~# airmon-ng start wlan1
   ```
+  
     - Cette commande crée une interface nouvelle interface en mode monitor. Par exemple *wlan1mon* suivant votre système. Vérifier en faisant un **ifconfig**.
 
 2. Analyser le traffic sur cette nouvelle interface.
