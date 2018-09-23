@@ -46,33 +46,33 @@
 ### Configuration
 
 1. Mainentant que l'on a compris globalement le fonctionnement du WPA2, on souhaite analyser/comprendre l'authentification auprès du point d'accès **TP-Link_39C5**. Pour ce faire:
-   - Lancer dans une 2e console, une deuxième connexion **ssh**.
-   - Lancer **tshark** pour capturer le traffic. On souhaite capturer les 10 premiers paquets de l'interface **wlan0** dans un fichier de capture *wpa.pcap*.
-   - Faire un **man tshark** pour plus d'informations.
+    - Lancer dans une 2e console, une deuxième connexion **ssh**.
+    - Lancer **tshark** pour capturer le traffic. On souhaite capturer les 10 premiers paquets de l'interface **wlan0** dans un fichier de capture *wpa.pcap*.
+    - Faire un **man tshark** pour plus d'informations.
 
 1. Générer une **PSK** (*Pre Shared Key*) à l'aide de l'outil **wpa_passphrase** dans un fichier nommé **wpa.conf**. Faire un **man wpa_passphrase** pour plus d'informations.
 
 1. Configurer la carte wifi intégrée au Raspberry pour se connecter au réseau **TP-Link_39C5** avec le mot de passe **18048452**.
 
-  - Utiliser la commande **wpa_supplicant** sur l'interface **wlan0** en background en utilisant le fichier *wpa.pcap* généré précédemment.
-  - **wpa_supplicant** va s'occuper de mettre en place la **PTK** pour encrypter les données échangées entre la station et le point d'accès.
+    - Utiliser la commande **wpa_supplicant** sur l'interface **wlan0** en background en utilisant le fichier *wpa.pcap* généré précédemment.
+    - **wpa_supplicant** va s'occuper de mettre en place la **PTK** pour encrypter les données échangées entre la station et le point d'accès.
 
 1. Une fois la **PTK** installer, vous devriez obtenier le message suivant:
 ```console
 Successfully initialized wpa_supplicant
 ```
 1. Lancer dans une 3e console, une troisième connxion ssh.
-  - Analyser le traffic échanger à l'aide de **tshark** et du fichier *wpa.pcap* généré précédemment. Cette fois-ci **tshark** n'est plus utilisé pour capturer el traffic mais pour analyser le traffic contenu dans le fichier *wpa.pcap*.
-  - Identifier les trames correspondantes au 4-way handshake.  
-  - Trouver la commande adéquate de **tshark** permettant de filtrer dans le fichier *wpa.pcap* uniqumement les trames du 4-way handshake. Analyser en détail ces trames en fonction de l'explication donnée auparavant. C'est à dire identifier les différents éléments/champs dans le contenu de chacune des trames.
-  - Schématiser.
+    - Analyser le traffic échanger à l'aide de **tshark** et du fichier *wpa.pcap* généré précédemment. Cette fois-ci **tshark** n'est plus utilisé pour capturer el traffic mais pour analyser le traffic contenu dans le fichier *wpa.pcap*.
+    - Identifier les trames correspondantes au 4-way handshake.  
+    - Trouver la commande adéquate de **tshark** permettant de filtrer dans le fichier *wpa.pcap* uniqumement les trames du 4-way handshake. Analyser en détail ces trames en fonction de l'explication donnée auparavant. C'est à dire identifier les différents éléments/champs dans le contenu de chacune des trames.
+    - Schématiser.
 
 1. Refaire un **ifconfig** et un **iwconfig** sur l'interface **wlan0**. Indiquer les nouvelles informations obtenues.
 
 1. La station ne peut toujours pas interagir car elle ne dispose pas encore d'adresse IP.
-  - Capturer le traffic à l'aide de **tshark** dans un fichier *dhcp.pcap*
-  - Utiliser le client DHCP avec la commande **dhclient** pour obtenir dynamiquement une @IP à partir du point d'accès.
-  - Faire un **man dhclient** pour plus d'informations
+    - Capturer le traffic à l'aide de **tshark** dans un fichier *dhcp.pcap*
+    - Utiliser le client DHCP avec la commande **dhclient** pour obtenir dynamiquement une @IP à partir du point d'accès.
+    - Faire un **man dhclient** pour plus d'informations
 
 1. Refaire un **ifconfig**. Vérifier dorénavant qu'une @IP vous a été affectée.
 
