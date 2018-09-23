@@ -107,26 +107,28 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
       ```
       root@kali:~# airmon-ng
       ```
+
     - Démarrer **airmon-ng** sur **wlan1**
       ```console
       root@kali:~# airmon-ng start wlan1
       ```
+
     - Cette commande crée une interface nouvelle interface en mode monitor. Par exemple *wlan1mon* suivant votre système. Vérifier en faisant un **ifconfig**.
 
 1. Analyser le traffic sur cette nouvelle interface.
 
     - Lancer l'analyse à l'aide de **airodump**
+    ```console
+    root@kali:~# airodump-ng wlan1mon
+    ```
 
-  ```console
-  root@kali:~# airodump-ng wlan1mon
-  ```
     - A partir de l'analyse de **airodump-ng**, récupérer le **BSSID** (**@MAC** du point d'accès) et **le numéro de canal de fréquence** utilisé par le point d'accès. Quitter.
 
     - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichir airodump.pcap.
+    ```console
+    root@kali:~# tshark -i wlan1mon -f "wlan host BSSID"
+    ```
 
-  ```console
-  root@kali:~# tshark -i wlan1mon -f "wlan host BSSID"
-  ```
     - Dorénavant, analysons spécifiquement notre point d'accès en spécifiant le canal (-c), et le bssid (--bssid).
     - Faire un *man airodump-ng* pour plus d'information.
     - Faire un ping à partir de votre interface *wlan0* pour simuler éventuellement du traffic.
@@ -143,8 +145,8 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
   - Nous allons injecter du traffic avec **aireplay-ng** en utilisant l'attaque 0.
 
   - Choisissez l'@MAC d'une station et déconnecter la du réseau.
-  ```console
-  aireplay-ng -0 0 -a  BSSID -c @MAC_STATION wlan1mon
-  ```
+    ```console
+    aireplay-ng -0 0 -a  BSSID -c @MAC_STATION wlan1mon
+    ```
 
   - Vérifier que la station est bien déconnectée. Arrêter la capture, et l'attaque. Analyser la capture deauth.pcap. Expliquer le fonctionnement de l'attaque. Illustrer avec des fragments de la capture de traffic *deauth.pcap*. En particulier, identifier les trames correspondant à l'attaque et les trames de reauthentification.
