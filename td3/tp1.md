@@ -50,7 +50,8 @@
     - Lancer **tshark** pour capturer le traffic. On souhaite capturer les 10 premiers paquets de l'interface **wlan0** dans un fichier de capture *wpa.pcap*.
     - Faire un **man tshark** pour plus d'informations.
 
-1. Générer une **PSK** (*Pre Shared Key*) à l'aide de l'outil **wpa_passphrase** dans un fichier nommé **wpa.conf**. Faire un **man wpa_passphrase** pour plus d'informations.
+1. Générer une **PSK** (*Pre Shared Key*) à l'aide de l'outil **wpa_passphrase** dans un fichier nommé **wpa.conf**.
+    - Faire un **man wpa_passphrase** pour plus d'informations.
 
 1. Configurer la carte wifi intégrée au Raspberry pour se connecter au réseau **TP-Link_39C5** avec le mot de passe **18048452**.
     - Utiliser la commande **wpa_supplicant** sur l'interface **wlan0** en background en utilisant le fichier *wpa.pcap* généré précédemment.
