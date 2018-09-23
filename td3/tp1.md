@@ -132,8 +132,8 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
     - Faire un ping à partir de votre interface *wlan0* pour simuler éventuellement du traffic.
     - Vous devriez obtenir toutes les stations connectées.
     - Notez le BSSID du point d'accès et les @MAC des stations connectées.
-    - Arrêter la capture, étudier le fichier airodump.pcap. Comparer cette technique avec **nmap** et **arp-scan**.
     ![Alt text](images/airodump1.png?raw=true "Pairwise Master Key")
+    - Arrêter la capture, étudier le fichier airodump.pcap. Comparer cette technique avec **nmap** et **arp-scan**.
 
 1. Dorénavant, nous allons injecter des trames afin de forcer la déconnection de tous les clients du point d'accès TP-Link_39C5.
     - Capturer avec **tshark** le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichier deauth.pcap.
