@@ -39,7 +39,7 @@
 | N° Phase         | Explication |
 | :--------------- |:---------------:|
 |  (Phase 1)       | Le point d'accès (A, comme *Access Point*) génère et envoie *msg1* qui contient un nombre aléatoire *ANonce* sans le chiffrer et sans l'authentifier.|
-|  (Phase 2)       |A la réception de *msg1*, le client (S, comme *Supplicant*) génère son propre nombre aléatoire *SNonce*. Et calcule une **PTK** basé sur: PTK= G(Anonce,SNonce,@MAC A,@MAC S). Attention, une **PTK** n'est pas juste une seule clé mais correspond à hiérarchie de 3 clés: KCK, KEK et une TK. Le client envoie alors un message *msg2* contenant SNonce et les paramètres de sécurité. La totalité du message est soumis à une vérification d'authentification grâce à la clé KCK. Cela correspond au **MIC** (Message Integrety Check).
+|  (Phase 2)       |A la réception de *msg1*, le client (S, comme *Supplicant*) génère son propre nombre aléatoire *SNonce*. Et calcule une **PTK** basé sur: PTK= G(Anonce,SNonce,@MAC A,@MAC S). Attention, une **PTK** n'est pas juste une seule clé mais correspond à hiérarchie de 3 clés: KCK, KEK et une TK. Le client envoie alors un message *msg2* contenant SNonce et les paramètres de sécurité. La totalité du message est soumis à une vérification d'authentification grâce à la clé KCK. Cela correspond au **MIC** (Message Integrity Check).
 |  (Phase 3)      |A la réception du *msg2*, le point d'accès doit pouvoir extraire le *SNonce* pour calculer, à son tour, la **PTK**, et vérifier le **MIC** du *msg2* afin de s'assurer que le client connaît bien la **PMK**. Enfin le point d'accès peut envoyer le *msg3* qui contient un clé **GTK** pour cypter les traffic en diffusion. La clé **GTK** est cryptée avec la **KEK**. La totalité du message est vérifiée *via* le **MIC** calculé grâce à la clé KCK.|
 |  (Phase 4)      |Enfin le dernier message *msg4* est envoyé par le client afin d'acquitter la réussite du 4-way Handshake, et indique que le client a correctement installé les clés et qu'il est prêt à commencer le chiffrement des données.|
 
@@ -78,22 +78,17 @@
 ## Partie III - Exploration du réseau
 
 1. Comment feriez-vous pour collecter l'ensemble des @IP des stations connectées au réseau WIFI?
-
   - Vérifier vos hypothèses en utilisant l'utilitaire **nmap** avec l'option **-sn**.
   - Faire un **man nmap** pour plus d'infomations.
   - Capturer le traffic AVANT de lancer la commande afin de déterminer la technique utilisée par nmap.
   - Expliquer.
 
 1. On souhaite utiliser une autre technique pour détecter les stations sur le réseau.
-
-    - Utiliser **tshark** pour capturer le traffic dans un fichier *arp-scan.pcap*
-
+  - Utiliser **tshark** pour capturer le traffic dans un fichier *arp-scan.pcap*
   - Utilier la commande **arp-scan** sur l'interface **wlan0** avec les options **--interface** et **--localnet**
-
   - Analyser le fichier *arp-scan.pcap*. Expliquer. Quelles sont les différences avec **nmap**?
 
 1. Sur les différents hôtes trouver, on souahite détecter quels sont les services disponibles.
-
   - Utiliser **tshark** pour capturer le traffic dans un fichier *port-scan.pcap*
   - Utiliser l'utilitaire **nmap** avec l'option **-sV**.
   - Analyser le fichier *port-scan.pcap*. Expliquer le fonctionnement.
