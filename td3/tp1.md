@@ -34,8 +34,7 @@
 
 ![Alt text](images/pmk.png?raw=true "Pairwise Master Key")
 
-
-      Le **4-way handshake** fonctionne de la manière suivante:
+    - Le **4-way handshake** fonctionne de la manière suivante:
 
 | N° Phase         | Explication |
 | :--------------- |:---------------:|
