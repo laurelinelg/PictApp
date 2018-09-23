@@ -122,7 +122,7 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
     ```
 
     - A partir de l'analyse de **airodump-ng**, récupérer le **BSSID** (**@MAC** du point d'accès) et **le numéro de canal de fréquence** utilisé par le point d'accès. Quitter.
-    - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichir airodump.pcap.
+    - Capturer avec **tshark** le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichir airodump.pcap.
     ```console
     root@kali:~# tshark -i wlan1mon -f "wlan host BSSID"
     ```
