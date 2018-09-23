@@ -32,7 +32,7 @@
     - KEK = Key Encryption Key, permet de garantir la confidentialité dans les échanges de clés.
     - TK  = Temporal Key, permet d'encrypter les données.
 
-![Alt text](images/pmk.png?raw=true "Pairwise Master Key")
+    ![Alt text](images/pmk.png?raw=true "Pairwise Master Key")
 
     - Le **4-way handshake** fonctionne de la manière suivante:
 
