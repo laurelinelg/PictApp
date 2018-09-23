@@ -35,6 +35,7 @@
 
 
 Le **4-way handshake** fonctionne de la manière suivante:
+
 | Phase | Explication |
 | :------------ |:---------------:|
 |  (Phase 1)    | Le point d'accès (A, comme *Access Point*) génère et envoie *msg1* qui contient un nombre aléatoire *ANonce* sans le chiffrer et sans l'authentifier.|
