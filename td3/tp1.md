@@ -108,17 +108,13 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
 1. Connecter la carte réseau Alfa sur votre Raspberry.
     - Vérifier que la nouvelle interface est bien détectée.
     - Lister l'ensemble des interfaces réseaux.
-
-  ```console
-  root@kali:~# airmon-ng
-  ```
-
+      ```
+      root@kali:~# airmon-ng
+      ```
     - Démarrer **airmon-ng** sur **wlan1**
-
-  ```console
-  root@kali:~# airmon-ng start wlan1
-  ```
-
+      ```console
+      root@kali:~# airmon-ng start wlan1
+      ```
     - Cette commande crée une interface nouvelle interface en mode monitor. Par exemple *wlan1mon* suivant votre système. Vérifier en faisant un **ifconfig**.
 
 1. Analyser le traffic sur cette nouvelle interface.
