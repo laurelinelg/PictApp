@@ -116,14 +116,12 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
     - Cette commande crée une interface nouvelle interface en mode monitor. Par exemple *wlan1mon* suivant votre système. Vérifier en faisant un **ifconfig**.
 
 1. Analyser le traffic sur cette nouvelle interface.
-
     - Lancer l'analyse à l'aide de **airodump**
     ```console
     root@kali:~# airodump-ng wlan1mon
     ```
 
     - A partir de l'analyse de **airodump-ng**, récupérer le **BSSID** (**@MAC** du point d'accès) et **le numéro de canal de fréquence** utilisé par le point d'accès. Quitter.
-
     - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichir airodump.pcap.
     ```console
     root@kali:~# tshark -i wlan1mon -f "wlan host BSSID"
@@ -140,7 +138,7 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
 
 1. Dorénavant, nous allons injecter des trames afin de forcer la déconnection de tous les clients du point d'accès TP-Link_39C5.
 
-  - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichier deauth.pcap.
+  - Capturer avec **tshark** le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichier deauth.pcap.
 
   - Nous allons injecter du traffic avec **aireplay-ng** en utilisant l'attaque 0.
 
