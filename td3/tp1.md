@@ -53,14 +53,13 @@
 1. Générer une **PSK** (*Pre Shared Key*) à l'aide de l'outil **wpa_passphrase** dans un fichier nommé **wpa.conf**. Faire un **man wpa_passphrase** pour plus d'informations.
 
 1. Configurer la carte wifi intégrée au Raspberry pour se connecter au réseau **TP-Link_39C5** avec le mot de passe **18048452**.
-
     - Utiliser la commande **wpa_supplicant** sur l'interface **wlan0** en background en utilisant le fichier *wpa.pcap* généré précédemment.
     - **wpa_supplicant** va s'occuper de mettre en place la **PTK** pour encrypter les données échangées entre la station et le point d'accès.
 
 1. Une fois la **PTK** installer, vous devriez obtenier le message suivant:
-```console
-Successfully initialized wpa_supplicant
-```
+    ```console
+    Successfully initialized wpa_supplicant
+    ```
 1. Lancer dans une 3e console, une troisième connxion ssh.
     - Analyser le traffic échanger à l'aide de **tshark** et du fichier *wpa.pcap* généré précédemment. Cette fois-ci **tshark** n'est plus utilisé pour capturer el traffic mais pour analyser le traffic contenu dans le fichier *wpa.pcap*.
     - Identifier les trames correspondantes au 4-way handshake.  
