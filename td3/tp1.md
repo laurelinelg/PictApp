@@ -33,7 +33,7 @@
 
 ![Alt text](images/pmk.png?raw=true "Pairwise Master Key")
 
-  Le **4-way handshake** fonctionne de la manière suivante:
+    Le **4-way handshake** fonctionne de la manière suivante:
 
   (1) Le point d'accès (A, comme *Access Point*) génère et envoie *msg1* qui contient un nombre aléatoire *ANonce* sans le chiffrer et sans l'authentifier.
 
@@ -106,45 +106,45 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
   - Injection de trames 802.11
 
 1. Connecter la carte réseau Alfa sur votre Raspberry.
-  - Vérifier que la nouvelle interface est bien détectée.
-  - Lister l'ensemble des interfaces réseaux.
+    - Vérifier que la nouvelle interface est bien détectée.
+    - Lister l'ensemble des interfaces réseaux.
 
   ```console
   root@kali:~# airmon-ng
   ```
 
-  - Démarrer **airmon-ng** sur **wlan1**
+    - Démarrer **airmon-ng** sur **wlan1**
 
   ```console
   root@kali:~# airmon-ng start wlan1
   ```
-  
+
     - Cette commande crée une interface nouvelle interface en mode monitor. Par exemple *wlan1mon* suivant votre système. Vérifier en faisant un **ifconfig**.
 
-2. Analyser le traffic sur cette nouvelle interface.
+1. Analyser le traffic sur cette nouvelle interface.
 
-  - Lancer l'analyse à l'aide de **airodump**
+    - Lancer l'analyse à l'aide de **airodump**
 
   ```console
   root@kali:~# airodump-ng wlan1mon
   ```
-  - A partir de l'analyse de **airodump-ng**, récupérer le **BSSID** (**@MAC** du point d'accès) et **le numéro de canal de fréquence** utilisé par le point d'accès. Quitter.
+    - A partir de l'analyse de **airodump-ng**, récupérer le **BSSID** (**@MAC** du point d'accès) et **le numéro de canal de fréquence** utilisé par le point d'accès. Quitter.
 
-  - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichir airodump.pcap.
+    - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichir airodump.pcap.
 
   ```console
   root@kali:~# tshark -i wlan1mon -f "wlan host BSSID"
   ```
-  - Dorénavant, analysons spécifiquement notre point d'accès en spécifiant le canal (-c), et le bssid (--bssid).
-  - Faire un *man airodump-ng* pour plus d'information.
-  - Faire un ping à partir de votre interface *wlan0* pour simuler éventuellement du traffic.
-  - Vous devriez obtenir toutes les stations connectées.
-  - Notez le BSSID du point d'accès et les @MAC des stations connectées.
-  - Arrêter la capture, étudier le fichier airodump.pcap. Comparer cette technique avec **nmap** et **arp-scan**.
+    - Dorénavant, analysons spécifiquement notre point d'accès en spécifiant le canal (-c), et le bssid (--bssid).
+    - Faire un *man airodump-ng* pour plus d'information.
+    - Faire un ping à partir de votre interface *wlan0* pour simuler éventuellement du traffic.
+    - Vous devriez obtenir toutes les stations connectées.
+    - Notez le BSSID du point d'accès et les @MAC des stations connectées.
+    - Arrêter la capture, étudier le fichier airodump.pcap. Comparer cette technique avec **nmap** et **arp-scan**.
 
   ![Alt text](images/airodump1.png?raw=true "Pairwise Master Key")
 
-3. Dorénavant, nous allons injecter des trames afin de forcer la déconnection de tous les clients du point d'accès TP-Link_39C5.
+1. Dorénavant, nous allons injecter des trames afin de forcer la déconnection de tous les clients du point d'accès TP-Link_39C5.
 
   - Capturer avec **tshark** uniquement le traffic sur l'interface **wlan1mon** provenant uniquement du point d'accès TP-Link_39C5 en utilisant un filtre de capture (-f) dans un fichier deauth.pcap.
 
@@ -155,4 +155,4 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
   aireplay-ng -0 0 -a  BSSID -c @MAC_STATION wlan1mon
   ```
 
-- Vérifier que la station est bien déconnectée. Arrêter la capture, et l'attaque. Analyser la capture deauth.pcap. Expliquer le fonctionnement de l'attaque. Illustrer avec des fragments de la capture de traffic *deauth.pcap*. En particulier, identifier les trames correspondant à l'attaque et les trames de reauthentification.
+  - Vérifier que la station est bien déconnectée. Arrêter la capture, et l'attaque. Analyser la capture deauth.pcap. Expliquer le fonctionnement de l'attaque. Illustrer avec des fragments de la capture de traffic *deauth.pcap*. En particulier, identifier les trames correspondant à l'attaque et les trames de reauthentification.
