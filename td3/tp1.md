@@ -36,7 +36,7 @@
 
 Le **4-way handshake** fonctionne de la manière suivante:
 
-| Phase            | Explication |
+| N° Phase         | Explication |
 | :--------------- |:---------------:|
 |  (Phase 1)       | Le point d'accès (A, comme *Access Point*) génère et envoie *msg1* qui contient un nombre aléatoire *ANonce* sans le chiffrer et sans l'authentifier.|
 |  (Phase 2)       |A la réception de *msg1*, le client (S, comme *Supplicant*) génère son propre nombre aléatoire *SNonce*. Et calcule une **PTK** basé sur: PTK= G(Anonce,SNonce,@MAC A,@MAC S). Attention, une **PTK** n'est pas juste une seule clé mais correspond à hiérarchie de 3 clés: KCK, KEK et une TK. Le client envoie alors un message *msg2* contenant SNonce et les paramètres de sécurité. La totalité du message est soumis à une vérification d'authentification grâce à la clé KCK. Cela correspond au **MIC** (Message Integrety Check).
