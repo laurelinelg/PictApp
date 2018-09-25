@@ -1,4 +1,13 @@
+Une partie de ce TP consiste à monter une attaque réseau. Cette pratique n'est autorisée que sur un réseau vous appartenant ou pour lequel vous avez les autorisations écrites nécessaires émanant des autorités idoines. Il va sans dire que toutes tentatives d'effectuer ce genre de chose sur les réseaux de l'ESIR, l'ISTIC, Rennes 1 ou autre et passible de sanctions disciplinaires et d'exclusion définitive, voire d'un passage par la case prison sans toucher 20 000 euros.
 
+
+**Article 323-1 du code pénal, Modifiée par LOI 2012-410 du 27 mars 2012 - art. 9}**
+
+Le fait d'accéder ou de se maintenir, frauduleusement, dans tout ou partie d'un système de traitement automatisé de données est puni de deux ans d'emprisonnement et de 30000 euros d'amende.
+
+Lorsqu'il en est résulte soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système, la peine est de trois ans d'emprisonnement et de 45000 euros d'amende.
+
+Lorsque les infractions prévues aux deux premiers alinèas ont été commises à l'encontre d'un système de traitement automatisée de données à caractère personnel mis en oeuvre par l'Etat, la peine est portée à cinq ans d'emprisonnement et à 75 000 euros d'amende. 
 
 ## Partie I - Configuration de la distribution
 
