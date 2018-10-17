@@ -17,8 +17,8 @@ Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard
 | 17/09/2018    |       TD2       |    GNS3         |Rapport | 23/09 à 23h
 | 18/09/2018    |       TP2       |     x           |Rapport | x 
 | 24/09/2018    |       TD3       |     x           |Rapport | x  
-| 25/09/2018    |       TP3       |     x           |Rapport | x   
-| 17/10/2018    |       TD4       |     x           |Rapport | x  
+| 25/09/2018    |       TP3       |     DeAuth      |Rapport | 02/10 à 23h   
+| 17/10/2018    |       TD4       |     Fake AP     |Rapport | 24/10 à 23h  
 | 24/10/2018    |       TD5       |     x           |Rapport | x 
 | 24/10/2018    |       TP4       |     x           |Rapport | x
 | 07/11/2018    |       TD6       |     x           |Rapport | x   
