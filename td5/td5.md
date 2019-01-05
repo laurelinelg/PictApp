@@ -65,7 +65,7 @@ d'accéder à internet ?
 2. Expliquer pourquoi le verrou de sécurité supplémentaire de l'étape 4 est important d'un point de vue sécurité.
 3. Citez une faille de sécurité potentielle dès lors que l'exécution de code Javascript est autorisé sur une application Android.
 
-### Partie 3: Exécuter du code Java à partir de Javascript
+### Partie III: Exécuter du code Java à partir de Javascript
 
 Dans cette partie, il vous est demandé de tirer parti du mécanisme d'interface `Java-Javascript` (appelé bridge) pour exécuter
 du code Java à partir de votre code javascript.
