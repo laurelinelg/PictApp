@@ -76,7 +76,7 @@ Afin de rendre votre application plus crédible, il vous est aussi demandé d'é
 une interface utilisateur.
 Pour faciliter le développement de cette interface utilisateur, vous pouvez utiliser [`mobileui`](https://mobileui.github.io/).
 
-1.Installer `mobileui` grâce à `npm` sur votre machine :
+1.Installer `mobileui` grâce à `npm` sur la machine :
 ```bash
 npm install -g mobileui
 ```
