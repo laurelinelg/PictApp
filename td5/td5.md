@@ -101,4 +101,4 @@ Vérifier qu'il est impossible pour l'utilisateur d'accéder à ses photos aprè
 7. Ecrire le code HTML/JS ainsi que le bridge nécessaire pour permettre à l'utilisateur de composer le numéro de 
 téléphone de son choix.
 
-ressources : [https://developer.android.com/guide/webapps/webview](https://developer.android.com/guide/webapps/webview)*
+ressources : [https://developer.android.com/guide/webapps/webview](https://developer.android.com/guide/webapps/webview)
