@@ -72,27 +72,23 @@ du code Java à partir de votre code javascript.
 Pour cela, il vous est demandé d'écrire le code nécessaire pour exposer des méthodes Java au code Javascript à l'aide 
 du concept de `JavaScriptInterface`.
 
-Afin de rendre votre application plus crédible, il vous est aussi demandé d'écrire le code HTML/CSS pour implémenter 
-une interface utilisateur.
+##### Installation de MobileUI
+Afin de rendre votre application plus crédible, il vous est aussi demandé d'implémenter l'interface utilisateur de l'application.
 Pour faciliter le développement de cette interface utilisateur, vous pouvez utiliser [`mobileui`](https://mobileui.github.io/).
 
-1.Installer `mobileui` grâce à `npm` sur la machine :
-```bash
-npm install -g mobileui
-```
+1.Installer `mobileui` grâce à `npm` sur la machine : `npm install -g mobileui`
 2. Se placer dans le répertoire `assets` de votre projet et créer un dossier `www`.
-3. Exécuter la commande `mobileui install template cordova-blank` qui permet d'injecter les fichiers nécessaire au 
+3. Exécuter la commande `mobileui install template cordova-blank` qui permet d'injecter les fichiers nécessaires au 
 bon fonctionnement des composants de `mobileui`.
-Par défaut, la commande précédente créé des fichiers `html`, `css` et `js` que vous pouvez modifier à votre guise pour
+La commande précédente crée des fichiers `html`, `css` et `js` par défaut que vous pouvez modifier à votre guise pour
 développer votre interface utilisateur.
 4. Effectuer les modifications dans le code java de votre application pour que la `Webview` pointe vers le fichier 
 `index.html` du dossier `www`. Ce sera le nouveau point d'entrée de votre application.
 
-*ressources : [https://developer.android.com/guide/webapps/webview](https://developer.android.com/guide/webapps/webview)*
-
+##### Implémentations demandées
 
 1. Ecrire le bridge qui permet de déclencher une alerte (Android Toast) dans le contexte de Java. Sur l'interface, 
-un bouton devra permettre de déclancher cette alerte.
+un bouton devra permettre de déclencher cette alerte.
 2. Ecrire le code Javascript et Java nécessaire pour que l'alerte affiche une chaine de caractères renseignée par 
 l'utilisateur dans un `<input>` sur la page html.
 3. Ecrire le bridge qui permet d'ouvrir la caméra de l'appareil. Implémenter le code qui permet de prendre une photo 
@@ -105,3 +101,4 @@ Vérifier qu'il est impossible pour l'utilisateur d'accéder à ses photos aprè
 7. Ecrire le code HTML/JS ainsi que le bridge nécessaire pour permettre à l'utilisateur de composer le numéro de 
 téléphone de son choix.
 
+ressources : [https://developer.android.com/guide/webapps/webview](https://developer.android.com/guide/webapps/webview)*
