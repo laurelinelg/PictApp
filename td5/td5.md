@@ -79,9 +79,11 @@ Pour faciliter le développement de cette interface utilisateur, vous pouvez uti
 1. Installer `mobileui` grâce à `npm` sur la machine : `npm install -g mobileui`
 2. Se placer dans le répertoire `assets` de votre projet et créer un dossier `www`
 3. Exécuter la commande `mobileui install template cordova-blank` qui permet d'injecter les fichiers nécessaires au 
-bon fonctionnement des composants de `mobileui`
+bon fonctionnement des composants de `mobileui`.
+
 La commande précédente crée des fichiers `html`, `css` et `js` par défaut que vous pouvez modifier à votre guise pour
 développer votre interface utilisateur
+
 4. Effectuer les modifications dans le code java de votre application pour que la `Webview` pointe vers le fichier 
 `index.html` du dossier `www`. Ce sera le nouveau point d'entrée de votre application.
 
