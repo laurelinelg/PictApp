@@ -68,24 +68,35 @@ d'accéder à internet ?
 ### Partie III: Exécuter du code Java à partir de Javascript
 
 Dans cette partie, il vous est demandé de tirer parti du mécanisme d'interface `Java-Javascript` (appelé bridge) pour exécuter
-du code Java à partir de votre code javascript.
-Pour cela, il vous est demandé d'écrire le code nécessaire pour exposer des méthodes Java au code Javascript à l'aide 
-du concept de `JavaScriptInterface`.
+du code Java à partir de votre code javascript. Ce méchanisme consiste à exposer des méthodes Java spécifiques au contexte
+Javascript à l'aide du concept de `JavaScriptInterface`.
 
-##### Installation de MobileUI
-Afin de rendre votre application plus crédible, il vous est aussi demandé d'implémenter l'interface utilisateur de l'application.
-Pour faciliter le développement de cette interface utilisateur, vous pouvez utiliser [`mobileui`](https://mobileui.github.io/).
+Pour mener à bien cette partie, vous développerez 5 mini applications dont les spécificités sont présentées ci-dessous.
+Vous placerez le code source de chaque application dans un répertoire spécifique dans le dossier `td5` du `repository` 
+github qui porterera le nom de l'application en question.
 
-1. Installer `mobileui` grâce à `npm` sur la machine : `npm install -g mobileui`
-2. Se placer dans le répertoire `assets` de votre projet et créer un dossier `www`
-3. Exécuter la commande `mobileui install template cordova-blank` qui permet d'injecter les fichiers nécessaires au 
+Pour chaque application, vous devrez implémenter l'interface utilisateur de celle-ci en vous aidant du framework [`mobileUI`](https://mobileui.github.io/).
+Vous pouvez installer `mobileUI` sur votre machine en utilisant `npm`: `npm install -g mobileui`.
+Vérifiez que le framework est bien installé en tapant la commande: `mobileui -v`.
+
+
+##### Installation de MobileUI pour une application
+Les étapes suivantes sont à répéter pour chaque nouvelle application:
+
+1. Se placer à la racine de votre projet d'application.
+2. Créer le chemin de répertoires `assets/www` au bon endroit:
+```bash
+mkdir -p app/src/main/assets/www
+```
+3. Se placer dans le dossier `assets`:
+```bash
+cd app/src/main/assets
+```
+2. Exécuter la commande `mobileui install template cordova-blank` qui permet d'injecter les fichiers nécessaires au 
 bon fonctionnement des composants de `mobileui`.
 
 > La commande précédente crée des fichiers `html`, `css` et `js` par défaut que vous pouvez modifier à votre guise pour
-développer votre interface utilisateur
-
-4. Effectuer les modifications dans le code java de votre application pour que la `Webview` pointe vers le fichier 
-`index.html` du dossier `www`. Ce sera le nouveau point d'entrée de votre application.
+développer votre interface utilisateur. Le point d'entrée de la webview est le fichier `assets/www/index.html`.
 
 ##### Implémentations demandées
 
