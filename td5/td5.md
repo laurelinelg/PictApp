@@ -90,6 +90,9 @@ développer votre interface utilisateur
 ##### Implémentations demandées
 
 ###### Application 1 - ToastApp
+
+> Créer dans un répertoire td5/ToastApp votre projet
+
 + Ecrire le bridge qui permet de déclencher une alerte (Android Toast) dans le contexte de Java. Sur l'interface, 
 un bouton devra permettre de déclencher cette alerte.
 + Ecrire le bridge qui permet d'afficher l'identifiant unique de l'appareil dans le contexte de la Webview.
@@ -97,19 +100,31 @@ un bouton devra permettre de déclencher cette alerte.
 l'utilisateur dans un `<input>` sur la page `html`.
 
 ###### Application 2 - PictApp
+
+> Créer dans un répertoire td5/PictApp votre projet
+
 + Ecrire le bridge qui permet d'ouvrir la caméra de l'appareil. Implémenter le code qui permet de prendre une photo 
 et de l'afficher sur l'interface utilisateur.
 
 ###### Application 3 - MsgpApp
+
+> Créer dans un répertoire td5/MsgApp votre projet
+
 + Ecrire le code javascript et Java nécessaire pour afficher les SMS de l'utilsateur dans le contexte de la *Webview*.
 Vous pourrez utiliser le composant [List](https://mobileui.github.io/#list) du framework `mobileui`.
 
 ###### Application 4 - CryptApp
+
+> Créer dans un répertoire td5/CryptApp votre projet
+
 + Ecrire une application qui chiffre et déchiffre le répertoire photo du téléphone à l'aide de la [`Java Cryptography Architecture`](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html).
 
 > Vérifier qu'il est impossible pour l'utilisateur d'accéder à ses photos après l'opération de cryptage.
 
 ###### Application 5 - PhoneApp
+
+> Créer dans un répertoire td5/PhoneApp votre projet
+
 + Ecrire le code `HTML/JS` ainsi que le bridge nécessaire pour permettre à l'utilisateur de composer le numéro de 
 téléphone de son choix.
 
