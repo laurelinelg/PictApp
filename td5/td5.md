@@ -81,7 +81,7 @@ Pour faciliter le développement de cette interface utilisateur, vous pouvez uti
 3. Exécuter la commande `mobileui install template cordova-blank` qui permet d'injecter les fichiers nécessaires au 
 bon fonctionnement des composants de `mobileui`.
 
-La commande précédente crée des fichiers `html`, `css` et `js` par défaut que vous pouvez modifier à votre guise pour
+> La commande précédente crée des fichiers `html`, `css` et `js` par défaut que vous pouvez modifier à votre guise pour
 développer votre interface utilisateur
 
 4. Effectuer les modifications dans le code java de votre application pour que la `Webview` pointe vers le fichier 
@@ -98,7 +98,8 @@ et de l'afficher sur l'interface utilisateur.
 4. Ecrire le code javascript et Java nécessaire pour afficher les SMS de l'utilsateur dans le contexte de la *Webview*.
 Vous pourrez utiliser le composant [List](https://mobileui.github.io/#list) du framework `mobileui`.
 5. Ecrire le bridge qui permet d'afficher l'identifiant unique de l'appareil dans le contexte de la Webview.
-6. Chiffrer le contenu du répertoire photo du téléphone à l'aide de la [`Java Cryptography Architecture`](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html)
+6. Chiffrer le contenu du répertoire photo du téléphone à l'aide de la [`Java Cryptography Architecture`](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html).
+
 Vérifier qu'il est impossible pour l'utilisateur d'accéder à ses photos après cette opération.
 7. Ecrire le code HTML/JS ainsi que le bridge nécessaire pour permettre à l'utilisateur de composer le numéro de 
 téléphone de son choix.
