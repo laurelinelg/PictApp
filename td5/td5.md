@@ -42,23 +42,29 @@ créez votre propre instance de `WebView` au sein de votre activité principale.
 
 ### Partie II: Exécuter du code local au sein d'une instance Webview
 
-Il est possible d'exécuter notre propre code au sein de l'instance `WebView` créée
-précédemment.
+Il est possible d'exécuter votre propre code au sein de l'instance `WebView` créée précédemment.
 
-1. Créez un répertoire nommé `assets` dans le dossier `main` du code source de l'application.
+1. Se placer à la racine de votre projet d'application.
+2. Créer le chemin de répertoires `assets/www` au bon endroit:
+```bash
+mkdir -p app/src/main/assets/www
+```
 2. Dans ce répertoire, créez un fichier HTML ainsi qu'un simple script Javascript. Faites en sorte
 que le fichier HTML charge le fichier javascript. 
 	- [index.html](index.html) 
 	- [main.js](main.js)
 3. Faites le nécessaire dans l'activité principale de votre application pour qu'elle charge le fichier HTML que vous
 avez créé à la place de l'actuelle page web.
-4. Lancez l'application et vérifiez que le code HTML est bien executé. Le code Javascript appelé par le fichier HTML n'est
+4. Lancez l'application et vérifiez que le code HTML est bien exécuté. Le code Javascript appelé par le fichier HTML n'est
 pas exécuté, pourquoi ? la réponse est [ici](https://developer.android.com/guide/webapps/webview).
 5. Faites les changements nécessaires dans l'application et vérifiez que votre code javascript est bien exécuté.
 
 ***NOTE**: [cette page](https://developer.android.com/guide/webapps/debugging) vous indique comment débugguer et savoir si votre code javascript a été exécuté ou pas.*
 
 *Questions :*
+
+Répondez à ces questions dans un fichier markdown appelé `rapport.md` que vous placerez à dans le dossier `td5` du
+repository github.
 
 1. peut-on exécuter du code Javascript dans le contexte d'une *Webview* sans que l'application Android ait la permission
 d'accéder à internet ?
@@ -73,7 +79,7 @@ Javascript à l'aide du concept de `JavaScriptInterface`.
 
 Pour mener à bien cette partie, vous développerez 5 mini applications dont les spécificités sont présentées ci-dessous.
 Vous placerez le code source de chaque application dans un répertoire spécifique dans le dossier `td5` du `repository` 
-github qui porterera le nom de l'application en question.
+github qui portera le nom de l'application en question.
 
 Pour chaque application, vous devrez implémenter l'interface utilisateur de celle-ci en vous aidant du framework [`mobileUI`](https://mobileui.github.io/).
 Vous pouvez installer `mobileUI` sur votre machine en utilisant `npm`: `npm install -g mobileui`.
@@ -107,7 +113,7 @@ développer votre interface utilisateur. Le point d'entrée de la webview est le
 + Ecrire le bridge qui permet de déclencher une alerte (Android Toast) dans le contexte de Java. Sur l'interface, 
 un bouton devra permettre de déclencher cette alerte.
 + Ecrire le bridge qui permet d'afficher l'identifiant unique de l'appareil dans le contexte de la Webview.
-+ Ecrire le code Javascript et Java nécessaire pour que l'alerte affiche une chaine de caractères renseignée par 
++ Ecrire le code Javascript et Java nécessaire pour que l'alerte affiche une chaîne de caractères renseignée par 
 l'utilisateur dans un `<input>` sur la page `html`.
 
 ###### Application 2 - PictApp
