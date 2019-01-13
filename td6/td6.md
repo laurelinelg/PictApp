@@ -25,7 +25,8 @@ qui envoie des données collectées sur un téléphone à un serveur pirate dist
 
 Vous devrez développer votre propre malware maquillé sous la forme d'un carnet d'adresses.
 
-Pour ce TP, il vous est demandé de produire un rapport complet qui rend fidèlement compte de votre travail.
+**Important**\
+En plus des différentes implémentations, il vous est demandé de produire un rapport complet qui rend fidèlement compte de votre travail.
 Dans ce rapport, vous écrirez ce que vous comprenez de l'exercice, les différents problèmes que vous rencontrez et 
 comment vous réussissez à les résoudre.
 Vous devrez aussi montrer que vous comprenez les différents enjeux de sécurité 
@@ -79,7 +80,7 @@ ainsi que le numéro `imei` collecté à un serveur distant.
 Le message envoyé doit être au format `JSON` et aura la structure suivante:
 ```json
 {
-	"device_id": "string",
+	"imei": "string",
 	"contacts": [
 		{
 			"name": "string",
