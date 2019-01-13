@@ -25,6 +25,13 @@ qui envoie des données collectées sur un téléphone à un serveur pirate dist
 
 Vous devrez développer votre propre malware maquillé sous la forme d'un carnet d'adresses.
 
+Pour ce TP, il vous est demandé de produire un rapport complet qui rend fidèlement compte de votre travail.
+Dans ce rapport, vous écrirez ce que vous comprenez de l'exercice, les différents problèmes que vous rencontrez et 
+comment vous réussissez à les résoudre.
+Vous devrez aussi montrer que vous comprenez les différents enjeux de sécurité 
+présentés dans ce TP.
+La rapport est à rendre sous forme d'un fichier `.md` à dans le répertoire *td6* : `td6/rapport.md`.
+
 
 ### Partie I: Implémenter un carnet d'adresses
 
@@ -39,7 +46,7 @@ Lors de la sélection d'un contact, l'utilisateur peut au choix lui envoyer un s
 * Ecrivez le Javascript et Java nécessaire pour récupérer les contacts de l'utilisateur et les afficher sous forme de 
 liste au sein de la Webview.
 * Ecrivez le code Javascript nécessaire pour pouvoir saisir le contenu d'un SMS après sélection d'un contact.
-* Ecrivez le bridge qui permet d'envoyer un SMS à partir du contenu saisi lors de l'action précédente.
+* Ecrivez le bridge qui permet d'envoyer un SMS à un contact à partir du contenu saisi lors de l'action précédente.
 * Ecrivez le code nécessaire qui permet de notifier l'utilisateur que le SMS a bien été envoyé.
 * Ecrivez le bridge qui permet de composer le numéro de téléphone d'un contact sélectionné.
 
@@ -89,11 +96,11 @@ Le message envoyé doit être au format `JSON` et aura la structure suivante:
 
 L'objectif de cette partie est de concevoir un serveur pirate capable de recevoir des données au format `json` au travers
 du protocol `http`.
-VOus écrirez le code nécessaire dans le répertoire suivant : `td6/pirate_server`.
+Vous écrirez le code nécessaire dans le répertoire suivant : `td6/pirate_server`.
 
 Voici les spécifications requises pour le serveur : 
 
-- Le serveur doit utiliser la plateforme `Node.js`.
+- Le serveur doit utiliser la plate-forme `node.js`.
 - Le serveur doit communiquer avec ses clients au travers du protocole `http`.
 - Le serveur doit être capable d'agir correctement en fonction de la requête qui lui est envoyée (`http` routing).
 - Le serveur doit être capable de *parser* le contenu de la requête reçue.
@@ -115,7 +122,7 @@ une commande qui ordonne à votre application d'envoyer des sms à un numéro de
 Pour que le serveur pirate puisse facilement envoyer des messages à l'application malicieuse, il vous est demandé d'ouvrir
 une connexion websocket entre le serveur et l'application.
 
-* Ecrivez le code Javascript nécessaire sur le serveur et le client pour ouvrir une connextion websocket.
+* Ecrivez le code Javascript nécessaire sur le serveur et le client pour ouvrir une connexion websocket.
 * Ecrivez le code Javascript nécessaire sur le serveur pour envoyer une commande `send_sms`.
 Cette commande est un message dont la structure est la suivante:
 ```json
@@ -124,7 +131,7 @@ Cette commande est un message dont la structure est la suivante:
 	"payload":
 		{
 			"phone_number": "string",
-			"content": "string",
+			"content": "string"
 		}
 }
 ```
