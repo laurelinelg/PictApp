@@ -30,7 +30,7 @@ présentés dans ce TP.
 La rapport est à rendre sous forme d'un fichier .md à dans le répertoire td7 : td7/rapport.md.
 ```
 
-## Partie I: Traquer la position GPS
+## Partie I : Traquer la position GPS
 
 Dans cette partie, vous devez concevoir une application Android qui relève la position GPS du téléphone toutes les 
 minutes et met à jour un point sur une carte.
@@ -44,7 +44,9 @@ Vous pourrez vous aider de l'API Google Maps pour faire cette étape. [https://d
 Vous expliquerez clairement dans le rapport quels mécanismes vous avez utilisé pour continuer à écouter la position
 GPS lorsque l'application est en arrière plan.
 
-## Partie II: Ecrire une application de News
+![](gpstracker.png) 
+
+## Partie II : Ecrire une application de News
 
 Dans cette partie, vous devez concevoir une application Android qui affiche une liste des dernières photos postées par 
 la NASA sur leur site.\
@@ -65,7 +67,7 @@ Description
 * Ecrivez le code nécessaire pour charger de nouvelles photos lorsque l'utilisateur scroll vers le bas.
 
 
-## Partie III: Collecter les données GPS de l'utilisateur
+## Partie III : Collecter les données GPS de l'utilisateur
 
 Dans cette partie, il vous est demandé de collecter les coordonnées GPS d'un téléphone sur un serveur distant toutes les 
 minutes.
