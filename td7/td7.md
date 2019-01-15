@@ -27,7 +27,7 @@ Dans ce rapport, vous écrirez ce que vous comprenez de l'exercice, les différe
 comment vous réussissez à les résoudre.
 Vous devrez aussi montrer que vous comprenez les différents enjeux de sécurité 
 présentés dans ce TP.
-La rapport est à rendre sous forme d'un fichier `.md` à dans le répertoire *td6* : `td6/rapport.md`.
+La rapport est à rendre sous forme d'un fichier .md à dans le répertoire td7 : td7/rapport.md.
 ```
 
 ## Partie I: Traquer la position GPS
@@ -62,7 +62,7 @@ Date
 Description
 ```
 
-* Ecrivez le code nécessaire pour charger de nouvelles photos lorsque l'utilisateur scroll vers le bas
+* Ecrivez le code nécessaire pour charger de nouvelles photos lorsque l'utilisateur scroll vers le bas.
 
 
 ## Partie III: Collecter les données GPS de l'utilisateur
