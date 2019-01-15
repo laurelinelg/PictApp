@@ -87,6 +87,7 @@ GPS.
 serveur pirate (implémenté lors du TD6) par le biais d'une requête `http`.
 
 Spécifications de la requête:
+
 | URL           | Method        | Body format        |
 | ------------- | ------------- | ------------------ |
 | `/location`   | `POST`        | `application/json` |
