@@ -9,6 +9,8 @@ Lorsqu'il en est résulte soit la suppression ou la modification de données con
 
 Lorsque les infractions prévues aux deux premiers alinèas ont été commises à l'encontre d'un système de traitement automatisée de données à caractère personnel mis en oeuvre par l'Etat, la peine est portée à cinq ans d'emprisonnement et à 75 000 euros d'amende. 
 
+> A la racine, vous devrez fournir un fichier `td1-Prenom-Nom.pdf` qui contient le rapport du **TD** et l'explication des commandes que vous avez produit, et/ou des résultats attendus (Le nom fichier doit contenir votre prénom et nom)!. 
+
 ## Partie I - Configuration de la distribution
 
 1.	Utiliser [Etcher](https://etcher.io) pour flasher votre carte SD avec [Kali Linux](https://images.offensive-security.com/arm-images/kali-linux-2019.3-rpi3-nexmon.img.xz
@@ -22,9 +24,7 @@ Lorsque les infractions prévues aux deux premiers alinèas ont été commises �
 
 1. A quoi sert le protocole **SSH**?
 
-## Partie II - Configuration wifi
-
-> A la racine, vous devrez fournir un fichier `td1-Prenom-Nom.pdf` qui contient le rapport du **TD** et l'explication du code que vous avez produit (Le nom fichier doit contenir votre prénom et nom)!.  
+## Partie II - Configuration wifi 
 
 ### Concepts
 1. Utiliser la commande **ifconfig** pour activer la carte réseau sans fil **wlan0**. Faire un **man ifconfig** pour plus d'informations.
@@ -34,7 +34,7 @@ Lorsque les infractions prévues aux deux premiers alinèas ont été commises �
 1. Faire un **iwconfig wlan0**. Quelles informations peut-on obtenir sur l'interface sans fil?
 
 1. Le point d'accès utilise WPA2 pour s'authentifier et encrypter les communications.
-    - A quoi sert une **PSK**? Pour quelles raisons utilise-t-on une **PSK**?
+    - A quoi sert une **PSK** (*Pre Shared Key*)? Pour quelles raisons utilise-t-on une **PSK**?
 
 1. La station et le point d'accès doivent partager une même **PMK** (*Pairwise Master Key*), sachant que dans notre contexte **PMK=hash(ssid,psk)**.
     - Pourquoi la **PMK** n'est elle pas utiliser directement pour encrypter les communications?
