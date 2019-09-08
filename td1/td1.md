@@ -11,7 +11,8 @@ Lorsque les infractions prévues aux deux premiers alinèas ont été commises �
 
 ## Partie I - Configuration de la distribution
 
-1.	Utiliser [Etcher](https://etcher.io) pour flasher votre carte SD avec [Kali Linux](https://images.offensive-security.com/arm-images/kali-linux-2018.3-rpi2.img.xz)
+1.	Utiliser [Etcher](https://etcher.io) pour flasher votre carte SD avec [Kali Linux](https://images.offensive-security.com/arm-images/kali-linux-2019.3-rpi3-nexmon.img.xz
+)
 
 1. Qu'est ce qu'une *link-local address*? Voir la RFC 3927.
 
