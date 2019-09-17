@@ -92,4 +92,6 @@ aircrack-ng capture.cap -w dictionnaire.txt
 
 > Voir la documentation sur [aircrack](https://tools.kali.org/wireless-attacks/aircrack-ng)
 
+> Voir la documentation sur [crunch](https://tools.kali.org/password-attacks/crunch)
+
 6. Sur quoi repose l'efficacité de cette attaque?
