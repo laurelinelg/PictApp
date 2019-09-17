@@ -1,3 +1,5 @@
+## Informations légales 
+
 Une partie de ce TP consiste à monter une attaque réseau. Cette pratique n'est autorisée que sur un réseau vous appartenant ou pour lequel vous avez les autorisations écrites nécessaires émanant des autorités idoines. Il va sans dire que toutes tentatives d'effectuer ce genre de chose sur les réseaux de l'ESIR, l'ISTIC, Rennes 1 ou autre et passible de sanctions disciplinaires et d'exclusion définitive, voire d'un passage par la case prison sans toucher 20 000 euros.
 
 
@@ -9,11 +11,13 @@ Lorsqu'il en est résulte soit la suppression ou la modification de données con
 
 Lorsque les infractions prévues aux deux premiers alinèas ont été commises à l'encontre d'un système de traitement automatisée de données à caractère personnel mis en oeuvre par l'Etat, la peine est portée à cinq ans d'emprisonnement et à 75 000 euros d'amende. 
 
+## Rappels
+
 > A la racine, vous devrez fournir un fichier `td2-Prenom-Nom.pdf` qui contient le rapport du **TD** et l'explication des commandes que vous avez produit, et/ou des résultats attendus (Le nom fichier doit contenir votre prénom et nom)!. 
 
 ## Partie I - Première attaque WIFI JAM
 
->On part du principe que la carte réseaux wifi du raspberry pi a bien été configurée (Voir [TD1](../td1/td1.md)). 
+>On part du principe que la carte réseaux wifi du Raspberry Pi a bien été configurée (Voir [TD1](../td1/td1.md)). 
 
 On souhaite réaliser un déni de service sur le réseau.
 Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interface réseau en USB. La particularité de cette carte réseau est de supporter deux modes de fonctionnement fondamentaux:
