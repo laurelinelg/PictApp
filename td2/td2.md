@@ -69,4 +69,7 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
 
     - Vérifier que la station est bien déconnectée. Arrêter la capture, et l'attaque. Analyser la capture deauth.pcap. Expliquer le fonctionnement de l'attaque. Illustrer avec des fragments de la capture de traffic *deauth.pcap*. En particulier, identifier les trames correspondant à l'attaque et les trames de reauthentification.
 
-1. Quel est l'intérêt du **WIFI JAM**?
+1. Quel est l'intérêt du **WIFI JAM**? 
+
+
+## Partie II - Brute force attaque
