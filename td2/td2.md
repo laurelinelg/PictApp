@@ -73,3 +73,23 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
 
 
 ## Partie II - Brute force attaque
+
+On souhaite générer des listes de mots de passes afin de réaliser une attaque par brute force. 
+
+Dans le [TD1](../td1/td1.md), nous avons aborder le principe du **4-way handshake**. L'objectif ici est de capturer cette séquence qui permet d'authentifier l'utilisateur pour ensuite essayer de casser la clef d'authentification par force brute.
+
+On suivra donc la méthodologie suivante:
+
+1. Capturer le traffic. 
+2. Déconnecter un utilisateur connecté.
+3. Isoler la séquence. 
+4. Générer un dictionnaire de mot de passes (voir l'usage de `crunch` (faire un `man crunch`))
+5. Utiliser l'utilitaire  `aircrack-ng` sur la séquence de capture et brute forcer avec le dictionnaire. 
+
+```console
+aircrack-ng capture.cap -w dictionnaire.txt
+```
+
+> Voir la documentation sur [aircrack](https://tools.kali.org/wireless-attacks/aircrack-ng)
+
+6. Sur quoi repose l'efficacité de cette attaque?
