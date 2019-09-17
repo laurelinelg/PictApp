@@ -13,8 +13,8 @@ Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard
 | Dates  | Type | Titre | Evaluation | Date de soumission
 | :------------ |:---------------:|:---------------:| :---------------:|:---------------:|
 | 06/09/2019    |       TD0      |Rappels réseaux  | |
-| 09/09/2019    |       [TD1](td1/td1.md)      | Prise en main Raspberry Pi  | |
-| 17/09/2019    |       [TD2](td2/td2.md)      | Attaque 1  | |
+| 09/09/2019    |       [TD1](td1/td1.md)      | Prise en main Raspberry Pi  | Rapport|
+| 17/09/2019    |       [TD2](td2/td2.md)      | Attaque 1  | Rapport |
 
 <!-- 
 | 11/09/2018    |       TP1       |    Git          |x |  
