@@ -72,7 +72,7 @@ Une attaque de type DOS. Pour se faire, nous allons utiliser une nouvelle interf
 1. Quel est l'intérêt du **WIFI JAM**? 
 
 
-## Partie II - Brute force attaque
+## Partie II - Hack the key
 
 On souhaite générer des listes de mots de passes afin de réaliser une attaque par brute force. 
 
@@ -80,18 +80,25 @@ Dans le [TD1](../td1/td1.md), nous avons aborder le principe du **4-way handshak
 
 On suivra donc la méthodologie suivante:
 
-1. Capturer le traffic. 
-2. Déconnecter un utilisateur connecté.
+1. Capturer le traffic. Utiliser `airodump-ng` avec l'option `-w`. Faire un `man airodump-ng` pour plus d'information.
+2. Déconnecter un utilisateur connecté. Utiliser donc `aireplay-ng` avec l'attaque `0`
 3. Isoler la séquence. 
 4. Générer un dictionnaire de mot de passes (voir l'usage de `crunch` (faire un `man crunch`))
+    - Dans la réalité, vous connaissez déjà la clé. Partez donc du principe que vous avez déjà une idée de la clé. 
+    Par exemple que cette dernière fait 8 Chiffres pour orienté la génération du dictionnaire. 
+
 5. Utiliser l'utilitaire  `aircrack-ng` sur la séquence de capture et brute forcer avec le dictionnaire. 
+  - Faire un `man airack-ng` pour avoir son manuel et la signification des options. 
+  - Indiquer que l'attaque porte sur du WPA2-PSK
+  - Indiquer le bssid de l'access point (sous la forme de son @MAC)
+
 
 ```console
-aircrack-ng capture.cap -w dictionnaire.txt
+aircrack-ng [options] capture.cap -w dictionnaire.txt
 ```
 
 > Voir la documentation sur [aircrack](https://tools.kali.org/wireless-attacks/aircrack-ng)
 
 > Voir la documentation sur [crunch](https://tools.kali.org/password-attacks/crunch)
 
-6. Sur quoi repose l'efficacité de cette attaque?
+6. Sur quoi repose l'efficacité de cette attaque? Comment fonctionne cette attaque. Expliquer.
