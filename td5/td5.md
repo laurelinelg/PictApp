@@ -1,8 +1,22 @@
 <!--## Partie I - Développer une application hybride-->
 
-### Disclaimer
+### Consignes
 
-Une partie de ce TP consiste à monter une attaque réseau. Cette pratique n'est autorisée que sur un réseau vous appartenant ou pour lequel vous avez les autorisations écrites nécessaires émanant des autorités idoines. Il va sans dire que toutes tentatives d'effectuer ce genre de chose sur les réseaux de l'ESIR, l'ISTIC, Rennes 1 ou autre et passible de sanctions disciplinaires et d'exclusion définitive, voire d'un passage par la case prison sans toucher 20 000 euros.
+#### Rapport écrit
+
+Afin d'évaluer correctement vos connaissances, il vous est demandé d'écrire et de rendre un rapport qui montre votre compréhension du sujet à l'enseignant.
+Ce rapport doit respecter les consignes suivantes:
+- Le rapport est ficher `.md` (markdown) appelé `rapport_[nom_prénom].md` que vous placerez dans le dossier `td5` de votre répertoire git.
+- Il vous est demandé d'expliquer les différentes étapes du TP et de montrer que vous les avez comprises.
+- Dans certaines parties du TP, il vous est demandé de répondre à des questions plus théoriques. Vous répondrez à ces questions dans le rapport dans un français correct et en prenant soin de les numéroter.
+
+#### Code
+
+Vous serez également évalué sur le code écrit pendant ce TP.
+Les consignes suivantes sont à respecter:
+- Le code produit doit pouvoir se compiler sur n'importe quelle machine qui possède l'environnement de développement standard (Android Studio). Tout code qui ne compile pas sur la machine de l'enseignant ne sera pas pris en compte dans l'évaluation.
+- Le code doit être clair et commenté.
+- Pour chaque nouveau projet d'application Android, vous placerez le répertoire du projet à dans le dossier `td5` et vous lui donnerez un nom explicite tel que `td5_partie1_webview`.
 
 ### Contexte
 
@@ -38,24 +52,6 @@ Pour faciliter la correction et le débuggage durant les TPs, ils vous est deman
 
 Il est de votre responsabilité de vérifier que l'application Android que vous développez est compatible avec la version d'Android et l'appareil mentionnés ci-dessus.
 Toute application non fonctionnelle en raison de problèmes d'incompatibilité ne sera pas prise en compte dans la ote finale du TP.
-
-### Consignes
-
-#### Rapport écrit
-
-Afin d'évaluer correctement vos connaissances, il vous est demandé d'écrire et de rendre un rapport qui montre votre compréhension du sujet à l'enseignant.
-Ce rapport doit respecter les consignes suivantes:
-- Le rapport est ficher `.md` (markdown) appelé `rapport_[nom_prénom].md` que vous placerez dans le dossier `td5` de votre répertoire git.
-- Il vous est demandé d'expliquer les différentes étapes du TP et de montrer que vous les avez comprises.
-- Dans certaines parties du TP, il vous est demandé de répondre à des questions plus théoriques. Vous répondrez à ces questions dans le rapport dans un français correct et en prenant soin de les numéroter.
-
-#### Code
-
-Vous serez également évalué sur le code écrit pendant ce TP.
-Les consignes suivantes sont à respecter:
-- Le code produit doit pouvoir se compiler sur n'importe quelle machine qui possède l'environnement de développement standard (Android Studio). Tout code qui ne compile pas sur la machine de l'enseignant ne sera pas pris en compte dans l'évaluation.
-- Le code doit être clair et commenté.
-- Pour chaque nouveau projet d'application Android, vous placerez le répertoire du projet à dans le dossier `td5` et vous lui donnerez un nom explicite tel que `td5_partie1_webview`.
 
 ### Partie I: Simple application avec Webview
 
