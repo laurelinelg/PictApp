@@ -30,6 +30,16 @@ d'une application Android.
 - Avoir *Android Studio* ou *Intellij* installé sur sa machine 
 - Avoir une machine virtuelle avec Android OS installé dessus (émulateur Android)
 
+#### Choix de l'émulateur Android:
+Pour faciliter la correction et le débuggage durant les TPs, ils vous est demandé d'utiliser un émulateur Android avec les conditions suivantes:
+
+- Device: Pixel with Google play Services
+- Version: Android Pie (API 28) with Google APIs
+- ABI: x86
+
+Il est de votre responsabilité de vérifier que l'application Android que vous développez est compatible avec la version d'Android et l'appareil mentionnés ci-dessus.
+Toute application non fonctionnelle en raison de problèmes d'incompatibilité ne sera pas prise en compte dans la ote finale du TP.
+
 ### Partie I: Simple application avec Webview
 
 Pour commencer, on vous demande de développer une simple application Android avec *Webview* pour se familiariser
