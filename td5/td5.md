@@ -27,8 +27,7 @@ d'une application Android.
 
 ### Pré-requis
 
-- Avoir *Android Studio* ou *Intellij* installé sur sa machine 
-- Avoir une machine virtuelle avec Android OS installé dessus (émulateur Android)
+- Avoir *Android Studio* ou *Intellij* installé sur sa machine
 
 #### Choix de l'émulateur Android:
 Pour faciliter la correction et le débuggage durant les TPs, ils vous est demandé d'utiliser un émulateur Android avec les conditions suivantes:
@@ -40,10 +39,28 @@ Pour faciliter la correction et le débuggage durant les TPs, ils vous est deman
 Il est de votre responsabilité de vérifier que l'application Android que vous développez est compatible avec la version d'Android et l'appareil mentionnés ci-dessus.
 Toute application non fonctionnelle en raison de problèmes d'incompatibilité ne sera pas prise en compte dans la ote finale du TP.
 
+### Consignes
+
+#### Rapport écrit
+
+Afin d'évaluer correctement vos connaissances, il vous est demandé d'écrire et de rendre un rapport qui montre votre compréhension du sujet à l'enseignant.
+Ce rapport doit respecter les consignes suivantes:
+- Le rapport est ficher `.md` (markdown) appelé `rapport_[nom_prénom].md` que vous placerez dans le dossier `td5` de votre répertoire git.
+- Il vous est demandé d'expliquer les différentes étapes du TP et de montrer que vous les avez comprises.
+- Dans certaines parties du TP, il vous est demandé de répondre à des questions plus théoriques. Vous répondrez à ces questions dans le rapport dans un français correct et en prenant soin de les numéroter.
+
+#### Code
+
+Vous serez également évalué sur le code écrit pendant ce TP.
+Les consignes suivantes sont à respecter:
+- Le code produit doit pouvoir se compiler sur n'importe quelle machine qui possède l'environnement de développement standard (Android Studio). Tout code qui ne compile pas sur la machine de l'enseignant ne sera pas pris en compte dans l'évaluation.
+- Le code doit être clair et commenté.
+- Pour chaque nouveau projet d'application Android, vous placerez le répertoire du projet à dans le dossier `td5` et vous lui donnerez un nom explicite tel que `td5_partie1_webview`.
+
 ### Partie I: Simple application avec Webview
 
 Pour commencer, on vous demande de développer une simple application Android avec *Webview* pour se familiariser
-avec l'approche. 
+avec l'approche.
 L'application devra être être capable de s'ouvrir sur l'émulateur Android et d'afficher le contenu
 d'une page web donnée, par exemple [https://news.ycombinator.com/](https://news.ycombinator.com/).
 
@@ -51,6 +68,13 @@ d'une page web donnée, par exemple [https://news.ycombinator.com/](https://news
 2. En vous inspirant de la [documentation officielle](https://developer.android.com/guide/webapps/webview) d'Android,
 créez votre propre instance de `WebView` au sein de votre activité principale.
 3. Utilisez une des méthodes fournies par l'interface `WebView` pour afficher le site web de votre choix à l'écran.
+
+#### Questions:
+
+1. Expliquez et détaillez en quelques étapes (vous pouvez vous aider d'un schéma) le fonctionnement de la technologie Webview.
+2. Pourquoi Webview est une technologie intéressante pour des entreprises de petite taille ?
+
+
 
 <!--***NOTE**: L'application doit avoir la permission d'accéder à internet pour pouvoir récupérer et afficher le contenu de la page web.*-->
 
@@ -77,8 +101,6 @@ pas exécuté, pourquoi ? la réponse est [ici](https://developer.android.com/gu
 
 *Questions :*
 
-Répondez à ces questions dans un fichier markdown appelé `rapport.md` que vous placerez à dans le dossier `td5` du
-repository github.
 
 1. peut-on exécuter du code Javascript dans le contexte d'une *Webview* sans que l'application Android ait la permission
 d'accéder à internet ?
