@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>TOAST APP</title>
+
+    <style>
+      body, html {
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F89821;
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 100px;
+      }
+    </style>
+
+</head>
+<body>
+<center>
+    <p><input type="button" value="Lancer message Toast" onClick="launchToast('Hello Android!')" /></p>
+    <p><input id="name" value="" placeholder="Entrez votre nom"/></p>
+    <p><button onclick="renvoienom()">OK</button></p>
+    <p><button onclick="getUUID()">Afficher identifiant téléphone</button> </p>
+</center>
+<script type="text/javascript">
+        <!-- Pour envoyer la valeur à Android -->
+        function launchToast(toast) {
+            AndroidInterface.showToast(toast);
+        }
+        function getUUID(rep){
+            AndroidInterface.getUUID(rep);
+        }
+        function renvoienom(){
+        var nom=document.getElementById('name').value;
+        AndroidInterface.showToast(nom);
+        }
+      </script>
+</body>
+</html>
